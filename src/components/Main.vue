@@ -1,26 +1,24 @@
 <template>
   <div class="hello">
     <div id="scene">
+      <h1>Scene</h1>
     </div>
-    <svg id="svg_main" width="1000" height="800">
+    <svg id="svg_main" width="1000" height="600">
       <Zone v-for="(zone, i) in zonesSorted"
         :key="'zone_' + i"
         :i="i"
-        :name="zone.name"
         :path="zone.path"
         :density="zone.density"
         :hover_function="zoneHover"
         :out_function="zoneOut"
         :hovered="hover === i"
+        :pic="zone.pic"
       />
-      <pattern v-for="(p, i) in patterns" :id="'pattern_' + p.density" :key="i" x="0" y="0" :width="grid" height="4" patternUnits="userSpaceOnUse">
-        <rect :width="grid" height="4" fill="white" />
-        <rect v-for="j in p.dots" width="2" height="2" :x="j" y="0" fill="black" :key="'pattern_' + p.density + 'dot_' + j" />
-      </pattern>
+      <Patterns :zones="zones" :grid="grid" />
     </svg>
     <div id="zone_info" :class="{hidden: !zoneInfo}">
       <div v-if="hover >= 0">
-        <h1>"{{ zonesSorted[hover].name }}"</h1>
+        <h1><span class="big">"</span><span v-html="zonesSorted[hover].name" /><span class="big">"</span></h1>
       </div>
     </div>
   </div>
@@ -29,12 +27,14 @@
 <script>
 import _ from 'lodash'
 import Zone from './Zone'
+import Patterns from './Patterns'
 import zones from '../zones'
 
 export default {
   name: 'Main',
   components: {
-    Zone
+    Zone,
+    Patterns
   },
   data: () => {
     return {
@@ -49,24 +49,6 @@ export default {
     },
     zoneInfo() {
       return this.hover >= 0
-    },
-    patterns() {
-      const densities = _.uniq(_.map(zones, "density"))
-      return _.map(densities, density => {
-
-        // Let's do the dots array
-        const dots = []
-        let i = Math.floor(this.grid / density)
-        while (i <= this.grid) {
-          dots.push(i)
-          i += this.grid / density
-        }
-
-        return {
-          density,
-          dots
-        }
-      })
     }
   },
   methods: {
@@ -92,7 +74,8 @@ export default {
   position: absolute;
   left: 50%;
   margin-left: -500px;
-
+  background-position: center center;
+  background-size: cover;
 }
 #zone_info {
   display: block;
@@ -110,5 +93,11 @@ export default {
 #zone_info.hidden {
   padding: 0;
   border: none;
+}
+#zone_info h1 {
+  font-family: 'Anton';
+  font-style: italic;
+}
+#zone_info h1 .big {
 }
 </style>

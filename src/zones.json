@@ -1,38 +1,44 @@
 [
   {
-    "name": "The good student (probably virgin)",
+    "name": "I might lose my hearing here (but also my virginity&nbsp;!)",
     "path": "M 200 0 L 200 0 L 800 0 L 800 50 L 200 50",
     "density": 40,
-    "layer": 10
+    "layer": 10,
+    "pic": "https://www.nme.com/wp-content/uploads/2020/10/GettyImages-1064240452-696x442.jpg"
   },
   {
     "name": "Concert 101",
     "path": "M 200 50 L 800 50 L 800 200 C 800 300 600 300 600 300 L 400 300 C 200 300 200 200 200 200",
     "density": 30,
-    "layer": 9
+    "layer": 9,
+    "pic": "https://www.nme.com/wp-content/uploads/2020/10/GettyImages-1064240452-696x442.jpg"
   },
   {
-    "name": "I like to see profiles... Maybe I'm from ancient Egypt",
+    "name": "I don't mind seeing things from the side... Maybe I'm from ancient Egypt",
     "path": "M 100 0 L 200 300 L 200 0 M 800 0 L 800 300 L 900 0",
     "density": 6,
-    "layer": 2
+    "layer": 2,
+    "pic": "https://www.nme.com/wp-content/uploads/2020/10/GettyImages-1064240452-696x442.jpg"
   },
   {
     "name": "Ahhh... Perfect",
     "path": "M 200 200 C 200 300 400 300 400 300 L 600 300 C 800 300 800 200 800 200 L 800 300 C 800 400 600 400 600 400 L 400 400 C 200 400 200 300 200 300",
     "density": 18,
-    "layer": 8
+    "layer": 8,
+    "pic": "https://www.nme.com/wp-content/uploads/2020/10/GettyImages-1064240452-696x442.jpg"
   },
   {
-    "name": "Not bad",
+    "name": "My girlfriend doesn't want to get into the crowd",
     "path": "M 200 300 C 200 400 400 400 400 400 L 600 400 C 800 400 800 300 800 300 L 800 400 C 800 500 600 500 600 500 L 400 500 C 200 500 200 400 200 400",
     "density": 10,
-    "layer": 7
+    "layer": 7,
+    "pic": "https://www.nme.com/wp-content/uploads/2020/10/GettyImages-1064240452-696x442.jpg"
   },
   {
-    "name": "I'm with friends... Certainly talking very loudly with them",
-    "path": "M 0 0 C 0 600 0 600 200 600 L 800 600 C 1000 600 1000 600 1000 0",
+    "name": "I make no difference between a live concert and a night club, so I stay at the bar - and talk very loudly with my friends",
+    "path": "M 0 0 L 100 0 L 200 300 L 200 400 C 200 500 400 500 400 500 L 600 500 C 800 500 800 400 800 400 L 800 300 L 900 0 L 1000 0 L 1000 600 L 0 600",
     "density": 2,
-    "layer": 0
+    "layer": 0,
+    "pic": "https://www.nme.com/wp-content/uploads/2020/10/GettyImages-1064240452-696x442.jpg"
   }
 ]

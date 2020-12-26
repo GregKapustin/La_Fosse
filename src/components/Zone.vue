@@ -13,9 +13,7 @@
 export default {
   name: 'Zone',
   props: {
-    name: String,
     path: String,
-    zone: Number,
     density: Number,
     i: Number,
     hover_function: Function,
@@ -25,7 +23,7 @@ export default {
   computed: {
     fill() {
       return this.hovered
-        ? "black"
+        ? 'transparent'
         : 'url(#pattern_' + this.density + ')'
     }
   }
