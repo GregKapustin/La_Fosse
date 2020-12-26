@@ -10,9 +10,11 @@
     "deploy": "ssh 4705871@git.sd3.gpaas.net deploy default.git"
   },
   "dependencies": {
+    "@vue/cli-service": "~4.5.0",
     "core-js": "^3.6.5",
     "lodash": "^4.17.20",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
