@@ -18,9 +18,9 @@
         <rect v-for="j in p.dots" width="2" height="2" :x="j" y="0" fill="black" :key="'pattern_' + p.density + 'dot_' + j" />
       </pattern>
     </svg>
-    <div id="zone_info">
-      <div v-if="hover >= 0">
-        {{ zonesSorted[hover].name }}
+    <div id="zone_info" :class="{hidden: zoneInfo}">
+      <div>
+        <h1>"{{ zonesSorted[hover].name }}"</h1>
       </div>
     </div>
   </div>
@@ -46,6 +46,9 @@ export default {
   computed: {
     zonesSorted() {
       return _.sortBy(zones, "layer")
+    },
+    zoneInfo() {
+      return this.hover >= 0
     },
     patterns() {
       const densities = _.uniq(_.map(zones, "density"))
@@ -90,5 +93,22 @@ export default {
   left: 50%;
   margin-left: -500px;
 
+}
+#zone_info {
+  display: block;
+  position: absolute;
+  right: 100px;
+  width: 20%;
+  z-index: 101;
+  border: solid 1px silver;
+  border-radius: 5px;
+  background: white;
+  padding: 10px;
+  text-align: right;
+  transition: 1s all ease;
+}
+#zone_info.hidden {
+  padding: 0;
+  border: none;
 }
 </style>

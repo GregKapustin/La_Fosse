@@ -14,7 +14,7 @@
   {
     "name": "I like to see profiles... Maybe I'm from ancient Egypt",
     "path": "M 100 0 L 200 300 L 200 0 M 800 0 L 800 300 L 900 0",
-    "density": 2,
+    "density": 6,
     "layer": 2
   },
   {
@@ -26,7 +26,7 @@
   {
     "name": "Not bad",
     "path": "M 200 300 C 200 400 400 400 400 400 L 600 400 C 800 400 800 300 800 300 L 800 400 C 800 500 600 500 600 500 L 400 500 C 200 500 200 400 200 400",
-    "density": 5,
+    "density": 10,
     "layer": 7
   },
   {
