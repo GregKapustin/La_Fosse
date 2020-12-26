@@ -18,8 +18,8 @@
         <rect v-for="j in p.dots" width="2" height="2" :x="j" y="0" fill="black" :key="'pattern_' + p.density + 'dot_' + j" />
       </pattern>
     </svg>
-    <div id="zone_info" :class="{hidden: zoneInfo}">
-      <div>
+    <div id="zone_info" :class="{hidden: !zoneInfo}">
+      <div v-if="hover >= 0">
         <h1>"{{ zonesSorted[hover].name }}"</h1>
       </div>
     </div>
