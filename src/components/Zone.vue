@@ -1,8 +1,11 @@
 <template>
   <path
+    class="path"
     :d="path"
-    :fill="'url(#pattern_' + density + ')'"
+    :fill="fill"
     stroke="silver"
+    @mouseenter="hover_function(i)"
+    @mouseout="out_function()"
   />
 </template>
 
@@ -13,17 +16,25 @@ export default {
     name: String,
     path: String,
     zone: Number,
-    density: Number
+    density: Number,
+    i: Number,
+    hover_function: Function,
+    out_function: Function,
+    hovered: Boolean
+  },
+  computed: {
+    fill() {
+      return this.hovered
+        ? "black"
+        : 'url(#pattern_' + this.density + ')'
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#scene {
-  display: block;
-  width: 100%;
-  height: 100px;
-  border-bottom: solid 2px black;
+.path {
+  position: absolute;
 }
 </style>

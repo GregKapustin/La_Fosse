@@ -3,17 +3,26 @@
     <div id="scene">
     </div>
     <svg id="svg_main" width="1000" height="800">
-      <Zone v-for="(zone, i) in zones"
+      <Zone v-for="(zone, i) in zonesSorted"
         :key="'zone_' + i"
+        :i="i"
         :name="zone.name"
         :path="zone.path"
-        :z="zone.z"
         :density="zone.density"
+        :hover_function="zoneHover"
+        :out_function="zoneOut"
+        :hovered="hover === i"
       />
       <pattern v-for="(p, i) in patterns" :id="'pattern_' + p.density" :key="i" x="0" y="0" :width="grid" height="4" patternUnits="userSpaceOnUse">
+        <rect :width="grid" height="4" fill="white" />
         <rect v-for="j in p.dots" width="2" height="2" :x="j" y="0" fill="black" :key="'pattern_' + p.density + 'dot_' + j" />
       </pattern>
     </svg>
+    <div id="zone_info">
+      <div v-if="hover >= 0">
+        {{ zonesSorted[hover].name }}
+      </div>
+    </div>
   </div>
 </template>
 
@@ -30,10 +39,14 @@ export default {
   data: () => {
     return {
       zones,
-      grid: 100
+      grid: 100,
+      hover: -1
     }
   },
   computed: {
+    zonesSorted() {
+      return _.sortBy(zones, "layer")
+    },
     patterns() {
       const densities = _.uniq(_.map(zones, "density"))
       return _.map(densities, density => {
@@ -51,6 +64,14 @@ export default {
           dots
         }
       })
+    }
+  },
+  methods: {
+    zoneHover(zone) {
+      this.hover = zone
+    },
+    zoneOut() {
+      this.hover = -1
     }
   }
 }
