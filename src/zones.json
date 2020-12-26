@@ -1,0 +1,38 @@
+[
+  {
+    "name": "The good student (probably virgin)",
+    "path": "M 200 0 L 200 0 L 800 0 L 800 50 L 200 50",
+    "z": 1,
+    "density": 40
+  },
+  {
+    "name": "Concert 101",
+    "path": "M 200 50 L 800 50 L 800 200 C 800 300 600 300 600 300 L 400 300 C 200 300 200 200 200 200",
+    "z": 1,
+    "density": 30
+  },
+  {
+    "name": "I like to see profiles... Maybe I'm from ancient Egypt",
+    "path": "M 100 0 L 200 300 L 200 0 M 800 0 L 800 300 L 900 0",
+    "z": 1,
+    "density": 8
+  },
+  {
+    "name": "Ahhh... Perfect",
+    "path": "M 200 200 C 200 300 400 300 400 300 L 600 300 C 800 300 800 200 800 200 L 800 300 C 800 400 600 400 600 400 L 400 400 C 200 400 200 300 200 300",
+    "z": 1,
+    "density": 18
+  },
+  {
+    "name": "Not bad",
+    "path": "M 200 300 C 200 400 400 400 400 400 L 600 400 C 800 400 800 300 800 300 L 800 400 C 800 500 600 500 600 500 L 400 500 C 200 500 200 400 200 400",
+    "z": 1,
+    "density": 5
+  },
+  {
+    "name": "I'm with friends... Certainly talking very loudly with them",
+    "path": "M 0 0 C 0 600 0 600 200 600 L 800 600 C 1000 600 1000 600 1000 0",
+    "z": 1,
+    "density": 2
+  }
+]
