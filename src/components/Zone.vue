@@ -24,8 +24,8 @@ export default {
   computed: {
     fill() {
       return this.hovered
-        ? 'black'
-        : this.color
+        ? 'silver'
+        : 'white'
     }
   }
 }

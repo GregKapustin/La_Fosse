@@ -1,7 +1,6 @@
 <template>
   <div class="hello" @mouseenter="zoneOut()">
     <div id="scene" @mouseenter="zoneOut()">
-      <h1>Scene</h1>
     </div>
     <svg id="svg_main" width="1000" height="600">
       <Zone v-for="(zone, i) in zonesSorted"
@@ -74,14 +73,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #scene {
+  position: absolute;
   display: block;
   width: 100%;
-  height: 100px;
-  border-bottom: solid 2px #34495e;
-  background: white;
+  height: 100%;
+  background: center center no-repeat;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/2018_-_Pol%E2%80%99and%E2%80%99Rock_Festival_-_Extrema_24.jpg/1280px-2018_-_Pol%E2%80%99and%E2%80%99Rock_Festival_-_Extrema_24.jpg');
+  background-size: cover;
 }
 #svg_main {
+  border: solid 1px silver;
   position: absolute;
+  top: 50%;
+  margin-top: -300px;
   left: 50%;
   margin-left: -500px;
   background-position: center center;
@@ -100,7 +104,6 @@ export default {
   transition: 0.5s all ease;
   padding: 0;
   top: 5%;
-  height: 90%;
   overflow-y: scroll;
 }
 .zone_popup.hidden {
@@ -110,10 +113,16 @@ export default {
 }
 #zone_info {
   left: 50%;
+  height: 90%;
+}
+#zone_info.hidden {
+  height: 0
 }
 #zone_chart {
   width: 30%;
-  left: 0;
+  left: 2%;
+  padding-top: 30px;
+  overflow: hidden;
 }
 #background {
   position: absolute;

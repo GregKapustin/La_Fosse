@@ -12,7 +12,7 @@
     "data": {
       "Room to dance": {
         "value": 0.5,
-        "caption": "Ok, you may move your arms above the barrier. But not too much though, security is tight here."
+        "caption": "Ok, you may move your arms above the barrier. But not too much though, security is tight here. The rest of your body ? Oh you won't evel feel it."
       },
       "Blabbers noise cancel": {
         "value": 8,
@@ -24,7 +24,7 @@
       },
       "Scene view": {
         "value": 5,
-        "caption": "You like seeing things from below ? Well here you are. Oh you also might get a lot of glare from the scene light."
+        "caption": "You like seeing under singer's skirt ? Careful, it might be a kilt. Oh you also might get a lot of glare from the scene light."
       },
       "Proximity to the bar": {
         "value": 0,
@@ -65,7 +65,7 @@
       },
       "Proximity to the bar": {
         "value": 1,
-        "caption": "Just forget about it. You'll never get an other drink after the one you actually finished waiting for the concert to start."
+        "caption": "Oh you can go back to the bar, after spending 3 songs ninja-walking outside the crowd. Spend 3 other songs ordering the drinks, 3 other songs ninja-walking BACK at your spot, never find your friends, spill all your drinks in strangers hoods, cry, wait for the end of the concert back at the bar."
       },
       "Security": {
         "value": 1,
@@ -86,11 +86,11 @@
     "data": {
       "Room to dance": {
         "value": 10,
-        "caption": "Yeah, but you have to turn your head on the side to keep on seeing the scene"
+        "caption": "Better be ZZ Top on stage. Got it ?"
       },
       "How late can you come": {
         "value": 9,
-        "caption": "Yeah they always will have spots there. Never seen it full. For so many reasons..."
+        "caption": "Yeah they always will have spots there. There are REASONS FOR THAT !!"
       },
       "Blabbers noise cancel": {
         "value": 8,
@@ -127,11 +127,11 @@
       },
       "How late can you come": {
         "value": 7,
-        "caption": "On time is fine. And if you don't bother pushing a few backs or ninja-moving in the crowd, you can even be late and still get a nice spot around there."
+        "caption": "On time is fine. And if you don't bother pushing a few eastpak backpacks or ninja-walking in the crowd, you can even be late and still get a nice spot around there."
       },
       "Blabbers noise cancel": {
         "value": 8,
-        "caption": "Not the best isolation but still good. Any group of drinkers thinking they're in a night club, or couples on a date, or teenager whose parents paid for their ticket, will ruin your day. But hey, you will still hear music fine."
+        "caption": "Not the best isolation but still good. Any group of drinkers thinking they're in a night club, or couples on a date, or teenager whose parents paid for their ticket, will ruin your day. But you'll enough \"in the zone\" to politely ask them to shut the f**k up."
       },
       "Scene view": {
         "value": 9,
@@ -217,7 +217,7 @@
       },
       "Security": {
         "value": 10,
-        "caption": "Well you might as be outside the festival."
+        "caption": "Well you might as well be outside the festival, as far as I'm concerned."
       }
     }
   }

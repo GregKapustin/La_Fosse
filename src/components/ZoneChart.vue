@@ -1,11 +1,21 @@
 <template>
   <div class="zoneChartRender">
-    <input type="radio" id="bar" value="bar" v-model="type">
-    <label for="bar">Bars</label>
-    <br>
-    <input type="radio" id="radar" value="radar" v-model="type">
-    <label for="radar">Radar</label>
-    <apexchart width="100%" :height="height + 'px'" :type="type" :options="options" :series="series"></apexchart>
+    <div class="columns is-centered">
+      <div class="row">
+        <b-field>
+          <b-radio-button v-model="type" native-value="bar" size="is-small">
+            <span>Bars</span>
+          </b-radio-button>
+          <b-radio-button v-model="type" native-value="radar" size="is-small">
+            <span>Radar</span>
+          </b-radio-button>
+          <b-radio-button v-model="type" native-value="none" size="is-small">
+            <span>X</span>
+          </b-radio-button>
+        </b-field>
+      </div>
+    </div>
+    <apexchart v-if="type != 'none'" width="100%" :height="height + 'px'" :type="type" :options="options" :series="series"></apexchart>
   </div>
 </template>
 
@@ -23,7 +33,7 @@ export default {
   },
   data: function() {
     return {
-      type: 'bar',
+      type: 'radar',
       options: {
         chart: {
           id: 'Zones-Chart',
