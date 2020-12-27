@@ -49,7 +49,7 @@
     "data": {
       "Room to dance": {
         "value": 1,
-        "caption": "Nope, no room to dance here. Even static jumping will be hard, if you don't want to step on strangers toes."
+        "caption": "Nope, no room to dance here. Even vertical jumping will be hard, if you don't want to step on strangers toes."
       },
       "How late can you come": {
         "value": 2,
@@ -70,6 +70,43 @@
       "Security": {
         "value": 1,
         "caption": "No safety here. If something bad happens, that's gonna be here. And if nothing happens, you still might get your feet stumbled upon, beer spilled on you (or thrown from behind) or some crowd surfer falling onto you."
+      }
+    }
+  },
+  {
+    "name": "Hell (pit) Hole",
+    "path": "M 425, 170 a 25,25 0 1,1 150,0 a 25,25 0 1,1 -150,0",
+    "density": 30,
+    "layer": 11,
+    "pattern": "2",
+    "color": "black",
+    "pic": "https://www.checkcheckcheck.be/wp-content/uploads/2018/02/article_pogo-1.jpg",
+    "caption": "Where problems happen",
+    "right": 0,
+    "data": {
+      "Room to dance": {
+        "value": 0,
+        "caption": "Shoulders. Omg shoulders everywhere."
+      },
+      "How late can you come": {
+        "value": 2,
+        "caption": "Same as Concert 101"
+      },
+      "Blabbers noise cancel": {
+        "value": 10,
+        "caption": "You're here for the audience more than for the band ? Well here you are."
+      },
+      "Scene view": {
+        "value": 5,
+        "caption": "Don't have a tall guy in front of you or you're screwed. Oh you're gonna be screwed anyway. You chose it !"
+      },
+      "Proximity to the bar": {
+        "value": 0,
+        "caption": "Try to drink the beer when it rains on you, that's your only chance. Even your own drink has been spilled by shoulders."
+      },
+      "Security": {
+        "value": 0,
+        "caption": "Danger ? <b>You're</b> the danger.<br/>No seriously, if you're shorter than 1m80, you won't enjoy the concert, AND you'll take risks in case anything happens."
       }
     }
   },
@@ -160,7 +197,7 @@
     "data": {
       "Room to dance": {
         "value": 8,
-        "caption": "Oh you'll have room to dance. But if you're weird, oh, you'll be on YouTube."
+        "caption": "Oh you'll have room to dance. But if you're weird as I am, oh, well, you'll be on YouTube."
       },
       "How late can you come": {
         "value": 10,
