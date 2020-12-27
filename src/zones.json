@@ -14,13 +14,13 @@
         "value": 0.5,
         "caption": "Ok, you may move your arms above the barrier. But not too much though, security is tight here. The rest of your body ? Oh you won't evel feel it."
       },
-      "Blabbers noise cancel": {
-        "value": 8,
-        "caption": "I've seen a singer asking somebody in the front to stop singing. True story."
-      },
       "How late can you come": {
         "value": 0,
         "caption": "At least 30 min beforehand. So forget about enjoying another concert before."
+      },
+      "Blabbers noise cancel": {
+        "value": 8,
+        "caption": "I've seen a singer asking somebody in the front to stop singing. True story."
       },
       "Scene view": {
         "value": 5,
@@ -90,7 +90,7 @@
       },
       "How late can you come": {
         "value": 2,
-        "caption": "Same as Concert 101"
+        "caption": "Be there early."
       },
       "Blabbers noise cancel": {
         "value": 10,
@@ -127,7 +127,7 @@
       },
       "How late can you come": {
         "value": 9,
-        "caption": "Yeah they always will have spots there. There are REASONS FOR THAT !!"
+        "caption": "Yeah there always will be available spots there. But there are REASONS FOR THAT !!"
       },
       "Blabbers noise cancel": {
         "value": 8,
@@ -237,7 +237,7 @@
         "caption": "Oh you will dance. But to which music ? You're between two scenes, idiot !"
       },
       "How late can you come": {
-        "value": 0,
+        "value": 10,
         "caption": "Actually there's no spot there. Because you're not even considered by the festival map as AROUND a scene."
       },
       "Blabbers noise cancel": {
