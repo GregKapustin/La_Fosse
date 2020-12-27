@@ -17,7 +17,7 @@
       />
     </svg>
     <div id="background" @mouseenter="zoneOut()"></div>
-    <div id="zone_info" class="zone_popup" :class="{hidden: !zoneInfo}">
+    <div id="zone_info" class="zone_popup" :class="{ hidden: !zoneInfo }" :style="{ marginLeft: infoLeft + 'px' }">
       <div v-if="hover >= 0">
         <ZoneData :zone="zonesSorted[hover]" />
       </div>
@@ -29,7 +29,6 @@
 </template>
 
 <script>
-import _ from 'lodash'
 import Zone from './Zone'
 import ZoneData from './ZoneData'
 import ZoneChart from './ZoneChart'
@@ -45,12 +44,14 @@ export default {
   data: () => {
     return {
       zones,
-      hover: -1
+      hover: -1,
+      infoLeft: 500,
+      windowWidth: window.innerWidth
     }
   },
   computed: {
     zonesSorted() {
-      return _.sortBy(zones, "layer")
+      return zones
     },
     zoneInfo() {
       return this.hover >= 0
@@ -59,6 +60,9 @@ export default {
   methods: {
     zoneHover(zone) {
       this.hover = zone
+      this.infoLeft = this.zones[zone].right > this.windowWidth * 2 / 10 // Bloc is 30% wide and we count from half 
+        ? this.windowWidth * 2 / 10
+        : this.zones[zone].right
     },
     zoneOut() {
       this.hover = -1
@@ -87,26 +91,29 @@ export default {
 .zone_popup {
   display: block;
   position: absolute;
-  width: 20%;
+  width: 30%;
   z-index: 101;
   border: solid 1px silver;
   border-radius: 5px;
   background: white;
   padding: 10px;
-  transition: 1s all ease;
+  transition: 0.5s all ease;
+  padding: 0;
+  top: 5%;
+  height: 90%;
+  overflow-y: scroll;
 }
 .zone_popup.hidden {
   padding: 0;
   border: none;
+  height: 0;
 }
 #zone_info {
   left: 50%;
-  margin-left: 500px;
 }
 #zone_chart {
   width: 30%;
-  left: 30%;
-  margin-left: -500px;
+  left: 0;
 }
 #background {
   position: absolute;

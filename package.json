@@ -16,6 +16,7 @@
     "@vue/compiler-sfc": "^3.0.4",
     "apexcharts": "^3.23.0",
     "babel-eslint": "^10.1.0",
+    "buefy": "^0.9.4",
     "core-js": "^3.6.5",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
