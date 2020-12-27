@@ -1,44 +1,146 @@
 [
   {
-    "name": "I might lose my hearing here (but also my virginity&nbsp;!)",
+    "name": "I might lose my hearing here (and my virginity too&nbsp;!)",
     "path": "M 200 0 L 200 0 L 800 0 L 800 50 L 200 50",
     "density": 40,
     "layer": 10,
-    "pic": "https://www.nme.com/wp-content/uploads/2020/10/GettyImages-1064240452-696x442.jpg"
+    "pattern": "1",
+    "color": "#c44569",
+    "pic": "https://c8.alamy.com/comp/B7BDPW/young-crowd-at-an-enter-shikari-gig-going-crazy-cheering-as-they-come-B7BDPW.jpg",
+    "caption": "They're only that excited when a photographer turns around to them. Rest of the time they're bored af.",
+    "zone": {
+      "marginLeft": "-300px",
+      "width": "600px",
+      "marginTop": "0",
+      "height": "50px"
+    },
+    "data": {
+      "Room to dance": 0,
+      "People won't hear you sing": 80,
+      "Time investment to get the place": 100,
+      "Noise cancelation to people talking around you": 100,
+      "Scene view": 50,
+      "Proximity to the bar": 0
+    }
   },
   {
     "name": "Concert 101",
     "path": "M 200 50 L 800 50 L 800 200 C 800 300 600 300 600 300 L 400 300 C 200 300 200 200 200 200",
     "density": 30,
     "layer": 9,
-    "pic": "https://www.nme.com/wp-content/uploads/2020/10/GettyImages-1064240452-696x442.jpg"
+    "pattern": "2",
+    "color": "#e77f67",
+    "pic": "http://www.the-splash.co.uk/wp-content/uploads/2020/04/Music-Festival-768x510.jpg",
+    "caption": "That might be your view. A lot of phones, a lot of girls on shoulders (and you don't get to see the boobs !)",
+    "zone": {
+      "marginLeft": "-300px",
+      "width": "600px",
+      "marginTop": "50px",
+      "height": "250px"
+    },
+    "data": {
+      "Room to dance": 10,
+      "People won't hear you sing": 100,
+      "Time investment to get the place": 80,
+      "Noise cancelation to people talking around you": 100,
+      "Scene view": 80,
+      "Proximity to the bar": 10
+    }
   },
   {
     "name": "I don't mind seeing things from the side... Maybe I'm from ancient Egypt",
     "path": "M 100 0 L 200 300 L 200 0 M 800 0 L 800 300 L 900 0",
     "density": 6,
     "layer": 2,
-    "pic": "https://www.nme.com/wp-content/uploads/2020/10/GettyImages-1064240452-696x442.jpg"
+    "pattern": "3",
+    "color": "#778beb",
+    "pic": "https://res.cloudinary.com/dragonspell/image/upload/w_1600,h_640,c_fill,dpr_auto,fl_progressive:steep,f_auto/v1571420593/www.travelportland.com/EVT_Music_ZooConcert_72012-179_courtesy_OregonZoo1.jpg",
+    "caption": "Forget about the drummer. You'll never see him/her.",
+    "zone": {
+      "marginLeft": "-400px",
+      "width": "800px",
+      "marginTop": "0",
+      "height": "300px"
+    },
+    "data": {
+      "Room to dance": 100,
+      "People won't hear you sing": 50,
+      "Time investment to get the place": 30,
+      "Noise cancelation to people talking around you": 30,
+      "Scene view": 20,
+      "Proximity to the bar": 80
+    }
   },
   {
     "name": "Ahhh... Perfect",
     "path": "M 200 200 C 200 300 400 300 400 300 L 600 300 C 800 300 800 200 800 200 L 800 300 C 800 400 600 400 600 400 L 400 400 C 200 400 200 300 200 300",
     "density": 18,
     "layer": 8,
-    "pic": "https://www.nme.com/wp-content/uploads/2020/10/GettyImages-1064240452-696x442.jpg"
+    "pattern": "4",
+    "color": "#686de0",
+    "pic": "https://media.vanityfair.com/photos/5e6921443b2c6a0008bf5b20/master/w_2560%2Cc_limit/FestivalCancellations-2020-GettyImages-174725380.jpg",
+    "caption": "That's where you'll find me !",
+    "zone": {
+      "marginLeft": "-300px",
+      "width": "600px",
+      "marginTop": "200px",
+      "height": "200px"
+    },
+    "data": {
+      "Room to dance": 80,
+      "People won't hear you sing": 80,
+      "Time investment to get the place": 50,
+      "Noise cancelation to people talking around you": 80,
+      "Scene view": 90,
+      "Proximity to the bar": 50
+    }
   },
   {
     "name": "My girlfriend doesn't want to get into the crowd",
     "path": "M 200 300 C 200 400 400 400 400 400 L 600 400 C 800 400 800 300 800 300 L 800 400 C 800 500 600 500 600 500 L 400 500 C 200 500 200 400 200 400",
     "density": 10,
     "layer": 7,
-    "pic": "https://www.nme.com/wp-content/uploads/2020/10/GettyImages-1064240452-696x442.jpg"
+    "pattern": "5",
+    "color": "#786fa6",
+    "pic": "https://thumbs.dreamstime.com/z/couple-swinging-rainbow-flags-sitting-grass-helsinki-pride-festival-helsinki-finland-june-couple-swinging-rainbow-153126913.jpg",
+    "caption": "Well at least you can leave fast, maybe sit on the grass sometimes. But people will pass by you ALL THE F**KING TIME",
+    "zone": {
+      "marginLeft": "-300px",
+      "width": "600px",
+      "marginTop": "250px",
+      "height": "250px"
+    },
+    "data": {
+      "Room to dance": 100,
+      "People won't hear you sing": 0,
+      "Time investment to get the place": 0,
+      "Noise cancelation to people talking around you": 0,
+      "Scene view": 10,
+      "Proximity to the bar": 100
+    }
   },
   {
-    "name": "I make no difference between a live concert and a night club, so I stay at the bar - and talk very loudly with my friends",
+    "name": "I will talk very loudly with my friends.",
     "path": "M 0 0 L 100 0 L 200 300 L 200 400 C 200 500 400 500 400 500 L 600 500 C 800 500 800 400 800 400 L 800 300 L 900 0 L 1000 0 L 1000 600 L 0 600",
     "density": 2,
     "layer": 0,
-    "pic": "https://www.nme.com/wp-content/uploads/2020/10/GettyImages-1064240452-696x442.jpg"
+    "pattern": "6",
+    "color": "white",
+    "pic": "https://www.frtyfve.com/uploads/images/_articleFull/festivalqueue.jpg",
+    "caption": "Seriously guys, go to a night club. Or a regular bar. You don't care about live music.",
+    "zone": {
+      "marginLeft": "-500px",
+      "width": "1000px",
+      "marginTop": "0",
+      "height": "600px"
+    },
+    "data": {
+      "Room to dance": 100,
+      "People won't hear you sing": 0,
+      "Time investment to get the place": 0,
+      "Noise cancelation to people talking around you": 0,
+      "Scene view": 0,
+      "Proximity to the bar": 100
+    }
   }
 ]

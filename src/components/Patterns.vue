@@ -1,20 +1,26 @@
 <template>
   <div>
-    <pattern v-for="(p, i) in patterns" :id="'pattern_' + p.density" :key="i" x="0" y="0" :width="grid" height="4" patternUnits="userSpaceOnUse">
-      <rect v-if="!hovered" :width="grid" height="4" fill="white" />
-      <rect v-for="j in p.dots" width="2" height="2" :x="j" y="0" fill="black" :key="'pattern_' + p.density + 'dot_' + j" />
-    </pattern>
+    <div v-for="(comp, i) in patterns" :key="'pattern_parent_' + i">
+      <component :is="comp" />
+    </div>
   </div>
 </template>
 
 <script>
 import _ from 'lodash'
+import patterns from './patterns/index.js'
 
 export default {
   name: 'Patterns',
+  components: patterns,
+  data: () => {
+    return {
+      grid: 100,
+      patterns
+    }
+  },
   props: {
     zones: Array,
-    grid: Number,
     hovered: Boolean
   },
   computed: {

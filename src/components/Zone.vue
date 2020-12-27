@@ -4,8 +4,8 @@
     :d="path"
     :fill="fill"
     stroke="silver"
-    @mouseenter="hover_function(i)"
-    @mouseout="out_function()"
+    @mouseover="hover_function(i)"
+    viewbox="0 0 100 100"
   />
 </template>
 
@@ -18,13 +18,14 @@ export default {
     i: Number,
     hover_function: Function,
     out_function: Function,
-    hovered: Boolean
+    hovered: Boolean,
+    color: String
   },
   computed: {
     fill() {
       return this.hovered
-        ? 'transparent'
-        : 'url(#pattern_' + this.density + ')'
+        ? 'black'
+        : this.color
     }
   }
 }

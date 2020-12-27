@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <div id="scene">
+  <div class="hello" @mouseenter="zoneOut()">
+    <div id="scene" @mouseenter="zoneOut()">
       <h1>Scene</h1>
     </div>
     <svg id="svg_main" width="1000" height="600">
@@ -13,13 +13,17 @@
         :out_function="zoneOut"
         :hovered="hover === i"
         :pic="zone.pic"
+        :color="zone.color"
       />
-      <Patterns :zones="zones" :grid="grid" />
     </svg>
-    <div id="zone_info" :class="{hidden: !zoneInfo}">
+    <div id="background" @mouseenter="zoneOut()"></div>
+    <div id="zone_info" class="zone_popup" :class="{hidden: !zoneInfo}">
       <div v-if="hover >= 0">
-        <h1><span class="big">"</span><span v-html="zonesSorted[hover].name" /><span class="big">"</span></h1>
+        <ZoneData :zone="zonesSorted[hover]" />
       </div>
+    </div>
+    <div id="zone_chart" class="zone_popup">
+      <ZoneChart :zones="zonesSorted" :hover="hover" />
     </div>
   </div>
 </template>
@@ -27,19 +31,20 @@
 <script>
 import _ from 'lodash'
 import Zone from './Zone'
-import Patterns from './Patterns'
+import ZoneData from './ZoneData'
+import ZoneChart from './ZoneChart'
 import zones from '../zones'
 
 export default {
   name: 'Main',
   components: {
     Zone,
-    Patterns
+    ZoneData,
+    ZoneChart
   },
   data: () => {
     return {
       zones,
-      grid: 100,
       hover: -1
     }
   },
@@ -68,7 +73,8 @@ export default {
   display: block;
   width: 100%;
   height: 100px;
-  border-bottom: solid 2px black;
+  border-bottom: solid 2px #34495e;
+  background: white;
 }
 #svg_main {
   position: absolute;
@@ -76,28 +82,39 @@ export default {
   margin-left: -500px;
   background-position: center center;
   background-size: cover;
+  z-index: 2;
 }
-#zone_info {
+.zone_popup {
   display: block;
   position: absolute;
-  right: 100px;
   width: 20%;
   z-index: 101;
   border: solid 1px silver;
   border-radius: 5px;
   background: white;
   padding: 10px;
-  text-align: right;
   transition: 1s all ease;
 }
-#zone_info.hidden {
+.zone_popup.hidden {
   padding: 0;
   border: none;
 }
-#zone_info h1 {
-  font-family: 'Anton';
-  font-style: italic;
+#zone_info {
+  left: 50%;
+  margin-left: 500px;
 }
-#zone_info h1 .big {
+#zone_chart {
+  width: 30%;
+  left: 30%;
+  margin-left: -500px;
+  height: 100%;
+}
+#background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 </style>
