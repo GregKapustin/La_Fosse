@@ -36,7 +36,6 @@ h1 {
   font-style: italic;
   color:slategray;
   font-size: 120%;
-  font-weight: 100;
   line-height: 90%;
   padding-top: 10px;
 }

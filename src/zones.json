@@ -15,12 +15,30 @@
       "height": "50px"
     },
     "data": {
-      "Room to dance": 0,
-      "People won't hear you sing": 80,
-      "Time investment to get the place": 100,
-      "Noise cancelation to people talking around you": 100,
-      "Scene view": 50,
-      "Proximity to the bar": 0
+      "Room to dance": {
+        "value": 0.5,
+        "caption": "Ok, you may move your arms above the barrier. But not too much though, security is tight here."
+      },
+      "Blabbers noise cancel": {
+        "value": 8,
+        "caption": "I've seen a singer asking somebody in the front to stop singing. True story."
+      },
+      "How late can you come": {
+        "value": 0,
+        "caption": "At least 30 min beforehand. So forget about enjoying another concert before."
+      },
+      "Scene view": {
+        "value": 5,
+        "caption": "You like seeing things from below ? Well here you are. Oh you also might get a lot of glare from the scene light."
+      },
+      "Proximity to the bar": {
+        "value": 0,
+        "caption": "Forget about it. You won't have any drink after the one you came with, that you actually finished before it even started."
+      },
+      "Security": {
+        "value": 9,
+        "caption": "That's actually a safe spot. You'll be pushed from the back but you can hold onto the barrier if anything happens. If you feel low, staff will make you go over it and you'll be at red cross in seconds."
+      }
     }
   },
   {
@@ -39,12 +57,30 @@
       "height": "250px"
     },
     "data": {
-      "Room to dance": 10,
-      "People won't hear you sing": 100,
-      "Time investment to get the place": 80,
-      "Noise cancelation to people talking around you": 100,
-      "Scene view": 80,
-      "Proximity to the bar": 10
+      "Room to dance": {
+        "value": 1,
+        "caption": "Nope, no room to dance here. Even static jumping will be hard, if you don't want to step on strangers toes."
+      },
+      "How late can you come": {
+        "value": 2,
+        "caption": "You still have to be here a bit early, if you want a place."
+      },
+      "Blabbers noise cancel": {
+        "value": 10,
+        "caption": "You won't be bothered by these idiots."
+      },
+      "Scene view": {
+        "value": 8,
+        "caption": "Yeah, nice view, but as it's also the most dense place here, any idiot with a smartphone will ruin it. So only 8/10."
+      },
+      "Proximity to the bar": {
+        "value": 1,
+        "caption": "Just forget about it. You'll never get an other drink after the one you actually finished waiting for the concert to start."
+      },
+      "Security": {
+        "value": 9,
+        "caption": "That's actually a safe spot. You'll be pushed from the back but you can hold onto the barrier if anything happens. If you have a health stuff, staff will make you go over it and you'll be at red cross in seconds."
+      }
     }
   },
   {
@@ -63,12 +99,30 @@
       "height": "300px"
     },
     "data": {
-      "Room to dance": 100,
-      "People won't hear you sing": 50,
-      "Time investment to get the place": 30,
-      "Noise cancelation to people talking around you": 30,
-      "Scene view": 20,
-      "Proximity to the bar": 80
+      "Room to dance": {
+        "value": 10,
+        "caption": "Yeah, but you have to turn your head on the side to keep on seeing the scene"
+      },
+      "How late can you come": {
+        "value": 9,
+        "caption": "Yeah they always will have spots there. Never seen it full. For so many reasons..."
+      },
+      "Blabbers noise cancel": {
+        "value": 8,
+        "caption": "You'll be as close as can be to the scene-side speakers. So you might lose a few hearing points there, but you won't hear people talking. Forever."
+      },
+      "Scene view": {
+        "value": 2,
+        "caption": "Well the side band member (bass or keyboard) gotta be a nice profile. Or maybe even good looking from the back, if they're placed roundly. And forget about the back - oh there was a light show ?"
+      },
+      "Proximity to the bar": {
+        "value": 8,
+        "caption": "Yup, good spot for that. You can move freely and there's a chance you have a bar very close."
+      },
+      "Security": {
+        "value": 9,
+        "caption": "You might have security crew standing around, and in case of crowd movement you can go to the side barriers. Good spot."
+      }
     }
   },
   {
@@ -87,12 +141,30 @@
       "height": "200px"
     },
     "data": {
-      "Room to dance": 80,
-      "People won't hear you sing": 80,
-      "Time investment to get the place": 50,
-      "Noise cancelation to people talking around you": 80,
-      "Scene view": 90,
-      "Proximity to the bar": 50
+      "Room to dance": {
+        "value": 10,
+        "caption": "Yeah, best spot to feel the music through the body ; enough room to move your arms and jump around freely, enough people around to NOT feel ashamed."
+      },
+      "How late can you come": {
+        "value": 7,
+        "caption": "On time is fine. And if you don't bother pushing a few backs or ninja-moving in the crowd, you can even be late and still get a nice spot around there."
+      },
+      "Blabbers noise cancel": {
+        "value": 8,
+        "caption": "Not the best isolation but still good. Any group of drinkers thinking they're in a night club, or couples on a date, or teenager whose parents paid for their ticket, will ruin your day. But hey, you will still hear music fine."
+      },
+      "Scene view": {
+        "value": 9,
+        "caption": "You're far enough to see above the smartphones, close enough to grasp the show. Good spot."
+      },
+      "Proximity to the bar": {
+        "value": 5,
+        "caption": "Density is not at its maximum, so you might find your spot back when you leave for a refill."
+      },
+      "Security": {
+        "value": 9,
+        "caption": "Good spot. All the crowd movement will be in front of you, and density behind you is low enough for you to run."
+      }
     }
   },
   {
@@ -111,12 +183,30 @@
       "height": "250px"
     },
     "data": {
-      "Room to dance": 100,
-      "People won't hear you sing": 0,
-      "Time investment to get the place": 0,
-      "Noise cancelation to people talking around you": 0,
-      "Scene view": 10,
-      "Proximity to the bar": 100
+      "Room to dance": {
+        "value": 8,
+        "caption": "Oh you'll have room to dance. But if you're weird, oh, you'll be on YouTube."
+      },
+      "How late can you come": {
+        "value": 10,
+        "caption": "Come any time, leave any time. Have no organisation. No rules. Be anarchist. Live the life."
+      },
+      "Blabbers noise cancel": {
+        "value": 0,
+        "caption": "You'll hear this parent beside you yelling at little Kevin for spilling his orange juice on the picnic napkin. And WHO forgot the sausages ? Concert ? What concert ?"
+      },
+      "Scene view": {
+        "value": 4,
+        "caption": "Well you're very far, so you'll see it all. Just very tiny..."
+      },
+      "Proximity to the bar": {
+        "value": 10,
+        "caption": "Actually you might be <i>behind</i> a bar."
+      },
+      "Security": {
+        "value": 9,
+        "caption": "You will be sitting. Or lying. So be prepared to get fast on your feet if the crowd moves. But you have all that picnic to put back in your Decathlon cooler, so sad !"
+      }
     }
   },
   {
@@ -125,7 +215,7 @@
     "density": 2,
     "layer": 0,
     "pattern": "6",
-    "color": "white",
+    "color": "silver",
     "pic": "https://www.frtyfve.com/uploads/images/_articleFull/festivalqueue.jpg",
     "caption": "Seriously guys, go to a night club. Or a regular bar. You don't care about live music.",
     "zone": {
@@ -135,12 +225,30 @@
       "height": "600px"
     },
     "data": {
-      "Room to dance": 100,
-      "People won't hear you sing": 0,
-      "Time investment to get the place": 0,
-      "Noise cancelation to people talking around you": 0,
-      "Scene view": 0,
-      "Proximity to the bar": 100
+      "Room to dance": {
+        "value": 10,
+        "caption": "Oh you will dance. But to which music ? You're between two scenes, idiot !"
+      },
+      "How late can you come": {
+        "value": 0,
+        "caption": "Actually there's no spot there. Because you're not even considered by the festival map as AROUND a scene."
+      },
+      "Blabbers noise cancel": {
+        "value": 0,
+        "caption": "You'll hear the cooks at the back of the food-truck yelling at each other. The music ? Not so much."
+      },
+      "Scene view": {
+        "value": 0,
+        "caption": "You might see some lights sometimes."
+      },
+      "Proximity to the bar": {
+        "value": 10,
+        "caption": "Come on."
+      },
+      "Security": {
+        "value": 9,
+        "caption": "Well you might as be outside the festival."
+      }
     }
   }
 ]

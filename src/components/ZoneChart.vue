@@ -1,6 +1,11 @@
 <template>
   <div class="zoneChartRender">
-    <apexchart width="100%" height="1000" type="radar" :options="options" :series="series"></apexchart>
+    <input type="radio" id="bar" value="bar" v-model="type">
+    <label for="bar">Bars</label>
+    <br>
+    <input type="radio" id="radar" value="radar" v-model="type">
+    <label for="radar">Radar</label>
+    <apexchart width="100%" :height="height + 'px'" :type="type" :options="options" :series="series"></apexchart>
   </div>
 </template>
 
@@ -13,40 +18,61 @@ export default {
   },
   props: {
     hover: Number,
-    zones: Array
+    zones: Array,
+    height: String
   },
   data: function() {
     return {
+      type: 'bar',
       options: {
         chart: {
-          id: 'Zones-Chart'
+          id: 'Zones-Chart',
+          toolbar: {
+            show: false
+          }
         },
         xaxis: {
           categories: _.keys(this.zones[0].data)
         },
-        stroke: {
+        endingShape: 'rounded',
+        horizontal: true,
+        yaxis: {
+          max: 10,
+          min: 0,
+          tickAmount: 5,
           show: false
+        },
+        dataLabels: {
+          enabled: false
         },
         markers: {
           size: 0
         },
-        subtitle: {
-          text: this.subtitle
+        stroke: {
+          show: false
+        },
+        tooltip: {
+          position: 'topRight',
+          followCursor: true,
+          custom: this.getTooltip
         }
       }
     }
   },
   computed: {
+    hovered() {
+      return this.hover >= 0
+    },
     zone() {
       return this.zones[this.hover]
     },
     series() {
-      return this.hover < 0
+      return !this.hovered
         ? _.map(this.zones, this.zoneGetData)
         : [this.zoneGetData(this.zone)]
     },
     subtitle() {
-      return this.hover < 0
+      return this.hovered
         ? ''
         : this.zone.caption
     }
@@ -55,35 +81,40 @@ export default {
     zoneGetData: (zone) => {
       return {
         name: zone.name,
-        data: _.values(zone.data),
+        data: _.map(_.values(zone.data), 'value'),
         color: zone.color
       }
+    },
+    getTooltip({series, seriesIndex, dataPointIndex}) {
+      const zone = this.hovered ? this.zone : this.zones[seriesIndex]
+      return '<div class="tooltip">'
+          + '<div class="section">"' + zone.name + '"</div>'
+          + '<div class="note">' + _.keys(zone.data)[dataPointIndex] + ' : ' + series[seriesIndex][dataPointIndex] + '/10</div>'
+        + '</div>'
     }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1 {
-  font-family: 'Anton';
-  font-style: italic;
-  color: #34495e;
-  margin-top: 10px;
+<style>
+.apexcharts-tooltip {
+  overflow: visible!important;
 }
-.image {
-  width: 100%;
-  height: 200px;
-  background-position: center center;
-  background-size: cover;
-}
-.caption {
+.tooltip .section {
   font-family: 'Teko';
-  font-style: italic;
-  color:slategray;
-  font-size: 120%;
-  font-weight: 100;
+  color:rgb(66, 66, 66);
+  font-size: 160%;
   line-height: 90%;
   padding-top: 10px;
+  border-bottom: solid 1px silver;
+}
+.tooltip .note {
+  margin: 10px;
+  font-family: 'Anton';
+  color:rgb(66, 66, 66);
+  font-size: 200%;
+  font-weight: bolder;
+  line-height: 90%;
 }
 </style>

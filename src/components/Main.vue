@@ -23,7 +23,7 @@
       </div>
     </div>
     <div id="zone_chart" class="zone_popup">
-      <ZoneChart :zones="zonesSorted" :hover="hover" />
+      <ZoneChart :zones="zonesSorted" :hover="hover" height="650" />
     </div>
   </div>
 </template>
@@ -107,7 +107,6 @@ export default {
   width: 30%;
   left: 30%;
   margin-left: -500px;
-  height: 100%;
 }
 #background {
   position: absolute;
