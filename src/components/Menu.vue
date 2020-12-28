@@ -65,7 +65,16 @@
       </div>
       <div class="menu_stuff align-left" id="about">
         <h1>{{ texts[lang].about.title }}</h1>
-        <div class="content" v-for="(content, i) in texts[lang].about.content" v-html="content" :key="'content_' + i" />
+        <div class="menu_stuff_content" v-for="(content, i) in texts[lang].about.content" v-html="content" :key="'content_' + i" />
+      </div>
+    </div>
+    <div class="item">
+      <div class="menu_icon">
+        <font-awesome-icon icon="copyright" />
+      </div>
+      <div class="menu_stuff align-left" id="copyright">
+        <h1>{{ texts[lang].copyright.title }}</h1>
+        <div class="menu_stuff_content" v-for="(content, i) in texts[lang].copyright.content" v-html="content" :key="'copyright_' + i" />
       </div>
     </div>
   </div>
@@ -155,6 +164,7 @@ export default {
   height: 0;
   overflow: hidden;
   transition: 0.5s all ease;
+  font-family: 'Roboto';
 }
 #menu .item:hover .menu_stuff {
   width: 460px;
@@ -184,5 +194,12 @@ h2 {
 }
 .align-right {
   text-align: right;
+}
+</style>
+<style>
+.menu_stuff .img {
+  display: inline;
+  height: 20px;
+  width: auto;
 }
 </style>

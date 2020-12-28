@@ -1,6 +1,6 @@
 <template>
   <div class="zoneChartRender">
-    <apexchart v-if="type != 'none'" width="100%" :height="height + 'px'" :type="type" :options="options" :series="series"></apexchart>
+    <apexchart v-if="type != 'none'" :height="height + 'px'" :type="type" :options="options" :series="series"></apexchart>
   </div>
 </template>
 

@@ -17,6 +17,16 @@
       "title": "Interface",
       "interactive": "Interactive version",
       "read": "Read version"
+    },
+    "copyright": {
+      "title": "Copyrights and Copylefts",
+      "content": [
+        "<li>Made with love, <img class=\"img\" src=\"https://vuejs.org/images/logo.png\" /> <a href=\"https://vuejs.org/\" target=\"_blank\">VueJS</a> and <img class=\"img\" src=\"https://buefy.org/static/img/buefy.1d65c18.png\" /> <a href=\"https://buefy.org/\" target=\"_blank\">Buefy</a></li>",
+        "<li>Graphs are made with <img class=\"img\" src=\"https://apexcharts.com/wp-content/themes/apexcharts/img/apexcharts-logo-white-trimmed.svg\" /> <a href=\"https://apexcharts.com/\" target=\"_blank\">ApexCharts.js</a></li>",
+        "<li>The background image is from <img class=\"img\" src=\"https://commons.wikimedia.org/static/images/project-logos/commonswiki.png\" /> <a href=\"https://commons.wikimedia.org/wiki/Category:Pogo_(dance)\" target=\"_blank\">Wikimedia Commons</a></li>",
+        "<li>Other images are from stockphotos, the watermark are still on, chill</li>",
+        "<li>If you'd like to participate, feel free to PR on <img class=\"img\" src=\"https://github.githubassets.com/images/modules/open_graph/github-mark.png\" /> <a href=\"https://github.com/GregKapustin/la_fosse\" target=\"_blank\">GitHub</a></li>"
+      ]
     }
   },
   "fr": {
@@ -37,6 +47,16 @@
       "title": "Interface",
       "interactive": "Version interactive",
       "read": "Version article"
+    },
+    "copyright": {
+      "title": "Copyrights et Copylefts",
+      "content": [
+        "<li>Fait avec amour, <img class=\"img\" src=\"https://vuejs.org/images/logo.png\" /> <a href=\"https://vuejs.org/\" target=\"_blank\">VueJS</a> et <img class=\"img\" src=\"https://buefy.org/static/img/buefy.1d65c18.png\" /> <a href=\"https://buefy.org/\" target=\"_blank\">Buefy</a></li>",
+        "<li>Les graphiques sont faits avec <img class=\"img\" src=\"https://apexcharts.com/wp-content/themes/apexcharts/img/apexcharts-logo-white-trimmed.svg\" /> <a href=\"https://apexcharts.com/\" target=\"_blank\">ApexCharts.js</a></li>",
+        "<li>L'image de fond vient de <img class=\"img\" src=\"https://commons.wikimedia.org/static/images/project-logos/commonswiki.png\" /> <a href=\"https://commons.wikimedia.org/wiki/Category:Pogo_(dance)\" target=\"_blank\">Wikimedia Commons</a></li>",
+        "<li>Les autres viennent d'un peu partout, peut-être du stockphoto, les watermarkes ont été laissés, chill</li>",
+        "<li>Si vous voulez participer, n'hésitez pas à PR sur <img class=\"img\" src=\"https://github.githubassets.com/images/modules/open_graph/github-mark.png\" /> <a href=\"https://github.com/GregKapustin/la_fosse\" target=\"_blank\">GitHub</a></li>"
+      ]
     }
   }
 }
