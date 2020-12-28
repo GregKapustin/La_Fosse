@@ -35,7 +35,8 @@
           "value": 6,
           "caption": "That's actually a pretty safe spot. You'll be pushed from the back (it can be pretty strong if there's a crowd movement) but you can hold onto the barrier if anything happens. If you feel low, staff will make you go over it and you'll be at red cross in seconds."
         }
-      }
+      },
+      "total_subtitle": "A well deserved bad grade. It's too much time investment to be surrounded by Instagram-seeking virgins."
     },
     {
       "name": "Concert 101",
@@ -72,7 +73,8 @@
           "value": 1,
           "caption": "No safety here. If something bad happens, that's gonna be here. And if nothing happens, you still might get your feet stumbled upon, beer spilled on you (or thrown from behind) or some crowd surfer falling onto you."
         }
-      }
+      },
+      "total_subtitle": "It seems cool because there's the most people here (are you a sheep ?) because if you were alone, well, that would be the best spot. But it's like beaches : people make it bad."
     },
     {
       "name": "Hell (pit) Hole",
@@ -109,7 +111,8 @@
           "value": 0,
           "caption": "Danger ? <b>You're</b> the danger.<br/>No seriously, if you're shorter than 1m80, you won't enjoy the concert, AND you'll take risks in case anything happens."
         }
-      }
+      },
+      "total_subtitle": "Well it is a 10/10 if you're my friend Martin with a Metallica shirt and on the stage is Metallica. But only before he got a child. Because it's reeaally dangerous."
     },
     {
       "name": "I don't mind seeing things from the side... Maybe I'm from ancient Egypt",
@@ -146,7 +149,8 @@
           "value": 9,
           "caption": "You might have security crew standing around, and in case of crowd movement you can go to the side barriers. Good spot."
         }
-      }
+      },
+      "total_subtitle": "A very nice grade if you're ok seeing a quarter of the band."
     },
     {
       "name": "Ahhh... Perfect",
@@ -183,7 +187,8 @@
           "value": 7,
           "caption": "Good spot. All the crowd movement will be in front of you, and density behind you is low enough for you to run."
         }
-      }
+      },
+      "total_subtitle": "The best spot. It's warm, safe, you can move around, people hide you. Go there. But not all of you, you'll waste it."
     },
     {
       "name": "My girlfriend doesn't want to get into the crowd",
@@ -220,7 +225,8 @@
           "value": 8,
           "caption": "You will be sitting. Or lying. So be prepared to get fast on your feet if the crowd moves. But you have all that picnic to put back in your Decathlon cooler, so sad !"
         }
-      }
+      },
+      "total_subtitle": "Actually a nice grade so enjoy this time of peace between two \"real concerts\" you go to."
     },
     {
       "name": "I will talk very loudly with my friends.",
@@ -257,7 +263,8 @@
           "value": 10,
           "caption": "Well you might as well be outside the festival, as far as I'm concerned."
         }
-      }
+      },
+      "total_subtitle": "As my GPA : the grade doesn't show the reality."
     }
   ],
   "fr": [
@@ -296,7 +303,8 @@
           "value": 6,
           "caption": "C'est en fait un endroit assez sécurisé. La sécu vous donnera de l'eau s'il fait chaud, et vous sortira par le couloir en cas de malaise. En cas de mouvement de foule, vous avez juste à vous accrocher à la barrière."
         }
-      }
+      },
+      "total_subtitle": "Une mauvaise note bien méritée. Un investissement en temps trop lourd pour se retrouver entouré de mecs en bermuda, dont le pull d'habitude sur les épaules est temporairement dans le sac à dos Eastpak."
     },
     {
       "name": "La base",
@@ -333,7 +341,8 @@
           "value": 1,
           "caption": "Zéro sécurité ici. Si quelque chose se passe, ce sera là. J'ai déjà été soulevé par un mouvement de foule et reposé 4 mètres plus loin. Et c'est ici que les crowd surfers te tomberont sur la tronche."
         }
-      }
+      },
+      "total_subtitle": "C'est comme la plage de Biarritz : c'est génial, alors tout le monde y va. Et résultat, c'est pourri."
     },
     {
       "name": "Le chaudron",
@@ -370,7 +379,8 @@
           "value": 0,
           "caption": "Danger ? <b>Tu es</b> le danger.<br/>Non sérieusement, les mouvements de foule ici peuvent être vraiment dangereux, sans compter les pogos (mais ça au moins c'est volontaire)."
         }
-      }
+      },
+      "total_subtitle": "Ce serait un 10/10 si vous êtes mon pote Martin et son t-shirt Metallica, et que sur scène il y a Nightwish. Sinon, passez votre chemin."
     },
     {
       "name": "J'adore voir les choses de profil. Si ça se trouve je viens d'Egypte antique.",
@@ -407,7 +417,8 @@
           "value": 9,
           "caption": "Il y a souvent ici des agents de sécu, et en cas de mouvement de foule, des barrières à proximité."
         }
-      }
+      },
+      "total_subtitle": "Une note assez haute car les conditions sont très bonnes, si on tolère rater les trois quarts de la scène."
     },
     {
       "name": "Ahhh... Perfect",
@@ -444,7 +455,8 @@
           "value": 7,
           "caption": "Bien. Les mouvements de foule seront dans les zones de devant, et derrière est assez peu dense pour pouvoir courir."
         }
-      }
+      },
+      "total_subtitle": "Le meilleur endroit selon moi. Mes voisins sont à environ un mètre, il fait chaud, j'entends parfaitement la musique, mais j'ai quand même de la place. Parfait..."
     },
     {
       "name": "Ma copine ne veut pas aller dans la foule",
@@ -481,7 +493,8 @@
           "value": 8,
           "caption": "Tu seras assis. P'tetre même allongé. Alors prépare toi à te lever vite s'il y a un mouvement de foule. Mais faut ranger tout le pic-nic dans la glacière, raaah ! Abandonne Jack, laisse la confiture de myrtille ici !"
         }
-      }
+      },
+      "total_subtitle": "Une note pas si mauvaise, car c'est l'endroit où vous irez pour un petit jazz entre deux concerts de rock."
     },
     {
       "name": "Je parle très fort avec mes amis",
@@ -516,9 +529,10 @@
         },
         "Sécurité": {
           "value": 10,
-          "caption": "Très dense entre deux gros concerts (voire l'artère principale des Solidays vers 20h). Sinon, désert."
+          "caption": "Très dense entre deux gros concerts (voire l'artère principale du Main Square vers 20h). Sinon, désert."
         }
-      }
+      },
+      "total_subtitle": "Une très bonne note, pour toute personne qui ne fait pas la différence entre les Solidays et un weekend à Longchamp."
     }
   ]
 }

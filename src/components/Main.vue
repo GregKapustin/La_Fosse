@@ -48,7 +48,8 @@
       <div id="zone_info" class="zone_popup" :class="{ hidden: !zoneInfo }" :style="{ marginLeft: infoLeft + 'px' }">
         <div v-if="hover >= 0">
           <ZoneDataHeader :zone="zonesSorted[hover]" />
-          <ZoneData :zone="zonesSorted[hover]" style="margin: 20px;" />
+          <ZoneData :zone="zonesSorted[hover]" style="margin: 20px;" :lang="lang" />
+          <ZoneDataFooter :zone="zonesSorted[hover]" :lang="lang" />
         </div>
       </div>
       <div id="zone_chart" class="zone_popup" v-if="graphType !== 'none'">
@@ -56,7 +57,7 @@
       </div>
     </div>
     <div v-if="articleType === 'read'" >
-      <Article :zones="zonesSorted" />
+      <Article :zones="zonesSorted" :lang="lang" />
     </div>
   </div>
 </template>
@@ -68,6 +69,7 @@ import Menu from './Menu'
 import Zone from './Zone'
 import ZoneDataHeader from './ZoneDataHeader'
 import ZoneData from './ZoneData'
+import ZoneDataFooter from './ZoneDataFooter'
 import ZoneChart from './ZoneChart'
 import Article from './Article'
 
@@ -78,6 +80,7 @@ export default {
     Zone,
     ZoneDataHeader,
     ZoneData,
+    ZoneDataFooter,
     ZoneChart,
     Article
   },
@@ -213,7 +216,8 @@ export default {
 #zone_chart {
   width: 30%;
   left: 2%;
-  padding-top: 30px;
+  top: 50%;
+  margin-top: -330px;
   overflow: hidden;
 }
 #background {

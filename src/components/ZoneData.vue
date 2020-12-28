@@ -9,12 +9,18 @@
 </template>
 
 <script>
+import _ from 'lodash'
+
 export default {
   name: 'ZoneData',
   props: {
-    zone: Object
+    zone: Object,
+    lang: String
   },
   computed: {
+    total() {
+      return (_.sum(_.map(this.zone.data, 'value')) / 6).toLocaleString('fr-FR', {maximumFractionDigits: 1, useGrouping:false})
+    }
   }
 }
 </script>
@@ -48,5 +54,22 @@ export default {
 .data_section {
   text-align: left;
   margin-bottom: 50px;
+}
+.zoneData .grade {
+  font-family: 'Anton';
+  font-size: 200%;
+  line-height: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+.zoneData .grade .spacebar {
+  position: absolute;
+  margin-top: -40px;
+  height: 50px;
+  z-index: -1;
+}
+.zoneData .grade .spacebar .barvalue {
+  height: 50px;
 }
 </style>

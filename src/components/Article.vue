@@ -20,9 +20,10 @@
           <ZoneChart :zones="zones" :hover="i" type="radar" height="400" class="zoneChart" />
         </div>
         <div class="column">
-          <ZoneData :zone="zone" />
+          <ZoneData :zone="zone" :lang="lang" />
         </div>
       </div>
+      <ZoneDataFooter :zone="zone" :lang="lang"/>
     </div>
   </div>
 </template>
@@ -31,6 +32,7 @@
 import Zone from './Zone'
 import ZoneDataHeader from './ZoneDataHeader'
 import ZoneData from './ZoneData'
+import ZoneDataFooter from './ZoneDataFooter'
 import ZoneChart from './ZoneChart'
 
 export default {
@@ -39,10 +41,12 @@ export default {
     Zone,
     ZoneDataHeader,
     ZoneData,
+    ZoneDataFooter,
     ZoneChart
   },
   props: {
-    zones: Array
+    zones: Array,
+    lang: String
   },
   methods: {
     zoneHover() {
