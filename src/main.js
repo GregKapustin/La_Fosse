@@ -11,6 +11,11 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 library.add(fas)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
+import VueGtag from "vue-gtag";
+Vue.use(VueGtag, {
+  config: { id: "G-XRK6XT4LQ3" }
+});
+
 import VueApexCharts from 'vue-apexcharts'
 Vue.use(VueApexCharts)
 Vue.component('apexchart', VueApexCharts)
