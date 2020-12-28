@@ -32,9 +32,7 @@
     "contact": {
       "title": "Contact",
       "content": [
-        "<img class=\"img\" src=\"https://f.hellowork.com/blogdumoderateur/2014/08/linkedin-logo-240x212.png\" /> <a href=\"https://www.linkedin.com/in/gkapustin\" target=\"_blank\">LinkedIn</a></li>",
-        "<img class=\"img\" src=\"https://help.twitter.com/content/dam/help-twitter/brand/logo.png\" /> <a href=\"https://twitter.com/ouaibagency\" target=\"_blank\">Twitter</a></li>",
-        "<img class=\"img\" src=\"https://github.githubassets.com/images/modules/open_graph/github-mark.png\" /> <a href=\"https://github.com/GregKapustin\" target=\"_blank\">GitHub</a></li>"
+        "<img class=\"img\" src=\"https://f.hellowork.com/blogdumoderateur/2014/08/linkedin-logo-240x212.png\" /> <a href=\"https://www.linkedin.com/in/gkapustin\" target=\"_blank\">LinkedIn</a> <img class=\"img\" src=\"https://help.twitter.com/content/dam/help-twitter/brand/logo.png\" /> <a href=\"https://twitter.com/ouaibagency\" target=\"_blank\">Twitter</a> <img class=\"img\" src=\"https://github.githubassets.com/images/modules/open_graph/github-mark.png\" /> <a href=\"https://github.com/GregKapustin\" target=\"_blank\">GitHub</a>"
       ]
     }
   },

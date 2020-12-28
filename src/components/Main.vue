@@ -27,8 +27,9 @@
     <div id="topTitle">
       {{ lang === 'fr' ? 'Géographie de la fosse' : 'Concert geography' }}
     </div>
-    <div id="scene" @mouseenter="zoneOut()">
-    </div>
+    <div id="scene" @mouseenter="zoneOut()"></div>
+    <div id="scene_2_0" v-if="articleType === 'interactive'" ></div>
+    <div id="scene_2_1" v-if="articleType === 'interactive'" ></div>
     <div v-if="articleType === 'interactive'">
       <svg id="svg_main" width="1000" height="600">
         <Zone v-for="(zone, i) in zonesSorted"
@@ -150,6 +151,26 @@ export default {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/2018_-_Pol%E2%80%99and%E2%80%99Rock_Festival_-_Extrema_24.jpg/1280px-2018_-_Pol%E2%80%99and%E2%80%99Rock_Festival_-_Extrema_24.jpg');
   background-size: cover;
 }
+#scene_2_0 {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 600px;
+  top: 50%;
+  margin-top: -300px;
+  border-top: solid 1px silver;
+  border-bottom: solid 1px silver;
+}
+#scene_2_1 {
+  position: fixed;
+  display: block;
+  width: 1000px;
+  height: 100%;
+  left: 50%;
+  margin-left: -500px;
+  border-right: solid 1px silver;
+  border-left: solid 1px silver;
+}
 #svg_main {
   opacity: 0.9;
   border: solid 1px silver;
@@ -161,6 +182,7 @@ export default {
   background-position: center center;
   background-size: cover;
   z-index: 2;
+  border-radius: 10px;;
 }
 .zone_popup {
   display: block;
@@ -193,7 +215,6 @@ export default {
   left: 2%;
   padding-top: 30px;
   overflow: hidden;
-  opacity: 0.8;
 }
 #background {
   position: absolute;
