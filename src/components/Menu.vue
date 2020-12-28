@@ -77,6 +77,15 @@
         <div class="menu_stuff_content" v-for="(content, i) in texts[lang].copyright.content" v-html="content" :key="'copyright_' + i" />
       </div>
     </div>
+    <div class="item">
+      <div class="menu_icon">
+        <font-awesome-icon icon="comments" />
+      </div>
+      <div class="menu_stuff align-left" id="contact">
+        <h1>{{ texts[lang].contact.title }}</h1>
+        <div class="menu_stuff_content" v-for="(content, i) in texts[lang].contact.content" v-html="content" :key="'contact_' + i" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -158,6 +167,7 @@ export default {
   width: 100%;
   text-align: center;
   font-size: 25px;
+  transition: 0.5s all ease;
 }
 #menu .item .menu_stuff {
   width: 0;
@@ -168,9 +178,12 @@ export default {
 }
 #menu .item:hover .menu_stuff {
   width: 460px;
-  height: 460px;
+  height: auto;
   padding: 20px;
   overflow: auto;
+}
+#menu .item:hover .menu_icon {
+  opacity: 0
 }
 h1 {
   font-family: 'Anton';
@@ -201,5 +214,24 @@ h2 {
   display: inline;
   height: 20px;
   width: auto;
+}
+.menu_stuff#contact .img {
+  display: inline;
+  height: 60px;
+  width: auto;
+}
+a {
+  color: white!important;
+  background: #34495e;
+  padding: 1px 3px;
+  border-radius: 2px;
+  transition: 0.5s all ease;
+}
+a:hover {
+  background-color: rgb(180, 180, 255);
+  color: black!important;
+}
+#contact a {
+  background: transparent;
 }
 </style>

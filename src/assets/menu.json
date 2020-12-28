@@ -9,6 +9,7 @@
       "title": "What is this ?!",
       "content": [
         "Hi, I'm <a href=\"https://www.linkedin.com/in/gkapustin/\" target=\"_blank\">Greg</a>, I'm a french developer, living in Istanbul, and I <b>LOVE</b> music festivals.",
+        "I even co-fonded <a href=\"https://www.yuflow.eu\" target=\"_blank\">Yuflow</a> in 2013 (today <a href=\"https://www.playpass.be\" target=\"_blank\">PlayPass France</a>)",
         "And this is \"La Fosse\" (<i>The pit</i>), <b>showing geo-typology of a concert</b>.",
         "Mouse-hover the different zones to get a description of each one, or set mode to \"read\" in parameters to have them all listed as an article."
       ]
@@ -27,6 +28,14 @@
         "<li>Other images are from stockphotos, the watermark are still on, chill</li>",
         "<li>If you'd like to participate, feel free to PR on <img class=\"img\" src=\"https://github.githubassets.com/images/modules/open_graph/github-mark.png\" /> <a href=\"https://github.com/GregKapustin/la_fosse\" target=\"_blank\">GitHub</a></li>"
       ]
+    },
+    "contact": {
+      "title": "Contact",
+      "content": [
+        "<img class=\"img\" src=\"https://f.hellowork.com/blogdumoderateur/2014/08/linkedin-logo-240x212.png\" /> <a href=\"https://www.linkedin.com/in/gkapustin\" target=\"_blank\">LinkedIn</a></li>",
+        "<img class=\"img\" src=\"https://help.twitter.com/content/dam/help-twitter/brand/logo.png\" /> <a href=\"https://twitter.com/ouaibagency\" target=\"_blank\">Twitter</a></li>",
+        "<img class=\"img\" src=\"https://github.githubassets.com/images/modules/open_graph/github-mark.png\" /> <a href=\"https://github.com/GregKapustin\" target=\"_blank\">GitHub</a></li>"
+      ]
     }
   },
   "fr": {
@@ -39,6 +48,7 @@
       "title": "Qu'est-ce que c'est ?!",
       "content": [
         "Hey, je suis <a href=\"https://www.linkedin.com/in/gkapustin/\" target=\"_blank\">Greg</a>, développeur, je vis à Istanbul, et <b>J'ADORE</b> les festivals de musique.",
+        "J'ai d'ailleurs co-fondé <a href=\"https://www.yuflow.eu\" target=\"_blank\">Yuflow</a> en 2013 (aujourd'hui <a href=\"https://www.playpass.be\" target=\"_blank\">PlayPass France</a>)",
         "Ceci est \"La Fosse\", une tentative de <b>géographie de la fosse</b>.",
         "Survolez les différentes zones pour avoir une description (et des blagues) de chacune, ou passez en mode \"article\" dans les paramètres pour simplement lire à la façon d'un article."
       ]
@@ -56,6 +66,12 @@
         "<li>L'image de fond vient de <img class=\"img\" src=\"https://commons.wikimedia.org/static/images/project-logos/commonswiki.png\" /> <a href=\"https://commons.wikimedia.org/wiki/Category:Pogo_(dance)\" target=\"_blank\">Wikimedia Commons</a></li>",
         "<li>Les autres viennent d'un peu partout, peut-être du stockphoto, les watermarkes ont été laissés, chill</li>",
         "<li>Si vous voulez participer, n'hésitez pas à PR sur <img class=\"img\" src=\"https://github.githubassets.com/images/modules/open_graph/github-mark.png\" /> <a href=\"https://github.com/GregKapustin/la_fosse\" target=\"_blank\">GitHub</a></li>"
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "content": [
+        "<a href=\"https://www.linkedin.com/in/gkapustin\" target=\"_blank\"><img class=\"img\" src=\"https://f.hellowork.com/blogdumoderateur/2014/08/linkedin-logo-240x212.png\" /></a> <a href=\"https://github.com/GregKapustin\" target=\"_blank\"><img class=\"img\" src=\"https://github.githubassets.com/images/modules/open_graph/github-mark.png\" /></a> <a href=\"https://twitter.com/ouaibagency\" target=\"_blank\"><img class=\"img\" src=\"https://help.twitter.com/content/dam/help-twitter/brand/logo.png\" /></a>"
       ]
     }
   }

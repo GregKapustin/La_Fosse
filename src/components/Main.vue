@@ -5,6 +5,9 @@
       :langChange="paramLang" :lang="lang"
       :articleChange="paramArticle" :articleType="articleType"
     />
+    <div id="topTitle">
+      {{ lang === 'fr' ? 'Géographie de la fosse' : 'Concert geography' }}
+    </div>
     <div id="scene" @mouseenter="zoneOut()">
     </div>
     <div v-if="articleType === 'interactive'">
@@ -102,6 +105,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#topTitle {
+  position: absolute;
+  z-index: 119;
+  background: white;
+  padding: 10px 50px 10px 5px;
+  border-bottom-right-radius: 10px;
+  font-family: 'Carter One';
+  color: #34495e;
+  font-size: 40px;
+  line-height: 40px;
+  padding: 10px 100px 10px 15px;
+  margin-bottom: 35px;
+  border-bottom: solid 1px silver;
+}
 .shadow {
   box-shadow: 5px 3px 3px black;
 }
