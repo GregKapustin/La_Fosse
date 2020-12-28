@@ -1,0 +1,24 @@
+{
+  "en": {
+    "params": "Params",
+    "language": "Language",
+    "graph": "Graph",
+    "bars": "Bars",
+    "radar": "Radar",
+    "about": {
+      "title": "What is this ?!",
+      "content": "Content"
+    }
+  },
+  "fr": {
+    "params": "Paramètres",
+    "language": "Langue",
+    "graph": "Graphique",
+    "bars": "Barres",
+    "radar": "Radar",
+    "about": {
+      "title": "Qu'est-ce que c'est ?!",
+      "content": "Contenu"
+    }
+  }
+}
