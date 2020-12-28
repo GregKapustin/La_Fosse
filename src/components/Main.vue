@@ -76,7 +76,7 @@ export default {
       windowWidth: window.innerWidth,
       graphType: 'radar',
       lang: 'fr',
-      articleType: 'article'
+      articleType: 'read'
     }
   },
   computed: {
