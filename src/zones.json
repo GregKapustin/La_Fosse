@@ -173,7 +173,7 @@
         },
         "Blabbers noise cancel": {
           "value": 8,
-          "caption": "Not the best isolation but still good. Any group of drinkers thinking they're in a night club, or couples on a date, or teenager whose parents paid for their ticket, will ruin your day. But you'll enough \"in the zone\" to politely ask them to shut the f**k up."
+          "caption": "Not the best isolation but still good. Any group of drinkers thinking they're in a night club, or couples on a date, or teenager whose parents paid for their ticket, will ruin your day. But you'll be enough \"in the zone\" to politely ask them to shut the f**k up."
         },
         "Scene view": {
           "value": 9,
@@ -240,7 +240,7 @@
       "right": 500,
       "data": {
         "Room to dance": {
-          "value": 10,
+          "value": 0,
           "caption": "Oh you will dance. But to which music ? You're between two scenes, idiot !"
         },
         "How late can you come": {
@@ -508,7 +508,7 @@
       "right": 500,
       "data": {
         "Place pour danser": {
-          "value": 10,
+          "value": 0,
           "caption": "Oh tu vas danser. Mais sur quelle musique ? T'es entre deux scènes, blaireau !"
         },
         "Investissement en temps": {
