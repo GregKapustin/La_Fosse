@@ -25,6 +25,22 @@
 
         <div class="columns is-vcentered">
           <div class="column align-left">
+            <h2>{{ texts[lang].article.title }} :</h2>
+          </div>
+          <div class="column align-right">
+            <b-field>
+              <b-radio-button v-model="articleCopy" @click="articleChange" native-value="interactive" size="is-small" type="is-dark">
+                <span>{{ texts[lang].article.interactive }}</span>
+              </b-radio-button>
+              <b-radio-button v-model="articleCopy" @click="articleChange" native-value="read" size="is-small" type="is-dark">
+                <span>{{ texts[lang].article.read }}</span>
+              </b-radio-button>
+            </b-field>
+          </div>
+        </div>
+
+        <div class="columns is-vcentered">
+          <div class="column align-left">
             <h2>{{ texts[lang].graph }} :</h2>
           </div>
           <div class="column align-right">
@@ -47,9 +63,9 @@
       <div class="menu_icon">
         <font-awesome-icon icon="question-circle" />
       </div>
-      <div class="menu_stuff" id="about">
+      <div class="menu_stuff align-left" id="about">
         <h1>{{ texts[lang].about.title }}</h1>
-        <div class="content" v-html="texts[lang].about.content"></div>
+        <div class="content" v-for="(content, i) in texts[lang].about.content" v-html="content" :key="'content_' + i" />
       </div>
     </div>
   </div>
@@ -66,6 +82,8 @@ export default {
     graphType: String,
     langChange: Function,
     lang: String,
+    articleChange: Function,
+    articleType: String
   },
   data: () => {
     return {
@@ -87,6 +105,14 @@ export default {
       },
       set(value) {
         this.langChange(value)
+      }
+    },
+    articleCopy: {
+      get() {
+        return this.articleType
+      },
+      set(value) {
+        this.articleChange(value)
       }
     }
   }
@@ -134,6 +160,7 @@ export default {
   width: 460px;
   height: 460px;
   padding: 20px;
+  overflow: auto;
 }
 h1 {
   font-family: 'Anton';

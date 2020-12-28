@@ -3,30 +3,36 @@
     <Menu
       :graphChange="paramGraph" :graphType="graphType"
       :langChange="paramLang" :lang="lang"
+      :articleChange="paramArticle" :articleType="articleType"
     />
     <div id="scene" @mouseenter="zoneOut()">
     </div>
-    <svg id="svg_main" width="1000" height="600">
-      <Zone v-for="(zone, i) in zonesSorted"
-        :key="'zone_' + i"
-        :i="i"
-        :path="zone.path"
-        :density="zone.density"
-        :hover_function="zoneHover"
-        :out_function="zoneOut"
-        :hovered="hover === i"
-        :pic="zone.pic"
-        :color="zone.color"
-      />
-    </svg>
-    <div id="background" @mouseenter="zoneOut()"></div>
-    <div id="zone_info" class="zone_popup" :class="{ hidden: !zoneInfo }" :style="{ marginLeft: infoLeft + 'px' }">
-      <div v-if="hover >= 0">
-        <ZoneData :zone="zonesSorted[hover]" />
+    <div v-if="articleType === 'interactive'">
+      <svg id="svg_main" width="1000" height="600">
+        <Zone v-for="(zone, i) in zonesSorted"
+          :key="'zone_' + i"
+          :i="i"
+          :path="zone.path"
+          :density="zone.density"
+          :hover_function="zoneHover"
+          :out_function="zoneOut"
+          :hovered="hover === i"
+          :pic="zone.pic"
+          :color="zone.color"
+        />
+      </svg>
+      <div id="background" @mouseenter="zoneOut()"></div>
+      <div id="zone_info" class="zone_popup" :class="{ hidden: !zoneInfo }" :style="{ marginLeft: infoLeft + 'px' }">
+        <div v-if="hover >= 0">
+          <ZoneData :zone="zonesSorted[hover]" />
+        </div>
+      </div>
+      <div id="zone_chart" class="zone_popup" v-if="graphType !== 'none'">
+        <ZoneChart :zones="zonesSorted" :hover="hover" height="650" :type="graphType" />
       </div>
     </div>
-    <div id="zone_chart" class="zone_popup" v-if="graphType !== 'none'">
-      <ZoneChart :zones="zonesSorted" :hover="hover" height="650" :type="graphType" />
+    <div id="article" v-if="articleType === 'read'" >
+      <Article :zones="zonesSorted" />
     </div>
   </div>
 </template>
@@ -38,6 +44,7 @@ import Menu from './Menu'
 import Zone from './Zone'
 import ZoneData from './ZoneData'
 import ZoneChart from './ZoneChart'
+import Article from './Article'
 
 export default {
   name: 'Main',
@@ -45,7 +52,8 @@ export default {
     Menu,
     Zone,
     ZoneData,
-    ZoneChart
+    ZoneChart,
+    Article
   },
   data: () => {
     return {
@@ -54,7 +62,8 @@ export default {
       infoLeft: 500,
       windowWidth: window.innerWidth,
       graphType: 'radar',
-      lang: 'fr'
+      lang: 'fr',
+      articleType: 'interactive'
     }
   },
   computed: {
@@ -80,6 +89,9 @@ export default {
     },
     paramLang(value) {
       this.lang = value
+    },
+    paramArticle(value) {
+      this.articleType = value
     }
   }
 }
@@ -91,7 +103,7 @@ export default {
   box-shadow: 5px 3px 3px black;
 }
 #scene {
-  position: absolute;
+  position: fixed;
   display: block;
   width: 100%;
   height: 100%;
