@@ -1,5 +1,9 @@
 <template>
   <div class="hello" @mouseenter="zoneOut()">
+    <Menu
+      :graphChange="paramGraph" :graphType="graphType"
+      :langChange="paramLang" :lang="lang"
+    />
     <div id="scene" @mouseenter="zoneOut()">
     </div>
     <svg id="svg_main" width="1000" height="600">
@@ -21,21 +25,24 @@
         <ZoneData :zone="zonesSorted[hover]" />
       </div>
     </div>
-    <div id="zone_chart" class="zone_popup">
-      <ZoneChart :zones="zonesSorted" :hover="hover" height="650" />
+    <div id="zone_chart" class="zone_popup" v-if="graphType !== 'none'">
+      <ZoneChart :zones="zonesSorted" :hover="hover" height="650" :type="graphType" />
     </div>
   </div>
 </template>
 
 <script>
+import zones from '../zones'
+
+import Menu from './Menu'
 import Zone from './Zone'
 import ZoneData from './ZoneData'
 import ZoneChart from './ZoneChart'
-import zones from '../zones'
 
 export default {
   name: 'Main',
   components: {
+    Menu,
     Zone,
     ZoneData,
     ZoneChart
@@ -45,12 +52,14 @@ export default {
       zones,
       hover: -1,
       infoLeft: 500,
-      windowWidth: window.innerWidth
+      windowWidth: window.innerWidth,
+      graphType: 'radar',
+      lang: 'fr'
     }
   },
   computed: {
     zonesSorted() {
-      return zones
+      return zones[this.lang]
     },
     zoneInfo() {
       return this.hover >= 0
@@ -59,12 +68,18 @@ export default {
   methods: {
     zoneHover(zone) {
       this.hover = zone
-      this.infoLeft = this.zones[zone].right > this.windowWidth * 2 / 10 // Bloc is 30% wide and we count from half 
+      this.infoLeft = this.zonesSorted[zone].right > this.windowWidth * 2 / 10 // Bloc is 30% wide and we count from half 
         ? this.windowWidth * 2 / 10
-        : this.zones[zone].right
+        : this.zonesSorted[zone].right
     },
     zoneOut() {
       this.hover = -1
+    },
+    paramGraph(value) {
+      this.graphType = value
+    },
+    paramLang(value) {
+      this.lang = value
     }
   }
 }
@@ -72,6 +87,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.shadow {
+  box-shadow: 5px 3px 3px black;
+}
 #scene {
   position: absolute;
   display: block;

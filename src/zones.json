@@ -1,261 +1,524 @@
-[
-  {
-    "name": "I might lose my hearing here (and my virginity too&nbsp;!)",
-    "path": "M 200 0 L 200 0 L 800 0 L 800 50 L 200 50",
-    "density": 40,
-    "layer": 10,
-    "pattern": "1",
-    "color": "#c44569",
-    "pic": "https://c8.alamy.com/comp/B7BDPW/young-crowd-at-an-enter-shikari-gig-going-crazy-cheering-as-they-come-B7BDPW.jpg",
-    "caption": "They're only that excited when a photographer turns around to them. Rest of the time they're bored af.",
-    "right": 300,
-    "data": {
-      "Room to dance": {
-        "value": 0.5,
-        "caption": "Ok, you may move your arms above the barrier. But not too much though, security is tight here. The rest of your body ? Oh you won't evel feel it."
-      },
-      "How late can you come": {
-        "value": 0,
-        "caption": "At least 30 min beforehand. So forget about enjoying another concert before."
-      },
-      "Blabbers noise cancel": {
-        "value": 8,
-        "caption": "I've seen a singer asking somebody in the front to stop singing. True story."
-      },
-      "Scene view": {
-        "value": 5,
-        "caption": "You like seeing under singer's skirt ? Careful, it might be a kilt. Oh you also might get a lot of glare from the scene light."
-      },
-      "Proximity to the bar": {
-        "value": 0,
-        "caption": "Forget about it. You won't have any drink after the one you came with, that you actually finished before it even started."
-      },
-      "Security": {
-        "value": 6,
-        "caption": "That's actually a pretty safe spot. You'll be pushed from the back (it can be pretty strong if there's a crowd movement) but you can hold onto the barrier if anything happens. If you feel low, staff will make you go over it and you'll be at red cross in seconds."
+{
+  "en": [
+    {
+      "name": "I might lose my hearing here (and my virginity too&nbsp;!)",
+      "path": "M 200 0 L 200 0 L 800 0 L 800 50 L 200 50",
+      "density": 40,
+      "layer": 10,
+      "pattern": "1",
+      "color": "#c44569",
+      "pic": "https://c8.alamy.com/comp/B7BDPW/young-crowd-at-an-enter-shikari-gig-going-crazy-cheering-as-they-come-B7BDPW.jpg",
+      "caption": "They're only that excited when a photographer turns around to them. Rest of the time they're bored af.",
+      "right": 300,
+      "data": {
+        "Room to dance": {
+          "value": 0.5,
+          "caption": "Ok, you may move your arms above the barrier. But not too much though, security is tight here. The rest of your body ? Oh you won't evel feel it."
+        },
+        "How late can you come": {
+          "value": 0,
+          "caption": "At least 30 min beforehand. So forget about enjoying another concert before."
+        },
+        "Blabbers noise cancel": {
+          "value": 8,
+          "caption": "I've seen a singer asking somebody in the front to stop singing. True story."
+        },
+        "Scene view": {
+          "value": 5,
+          "caption": "You like seeing under singer's skirt ? Careful, it might be a kilt. Oh you also might get a lot of glare from the scene light."
+        },
+        "Proximity to the bar": {
+          "value": 0,
+          "caption": "Forget about it. You won't have any drink after the one you came with, that you actually finished before it even started."
+        },
+        "Security": {
+          "value": 6,
+          "caption": "That's actually a pretty safe spot. You'll be pushed from the back (it can be pretty strong if there's a crowd movement) but you can hold onto the barrier if anything happens. If you feel low, staff will make you go over it and you'll be at red cross in seconds."
+        }
+      }
+    },
+    {
+      "name": "Concert 101",
+      "path": "M 200 50 L 800 50 L 800 200 C 800 300 600 300 600 300 L 400 300 C 200 300 200 200 200 200",
+      "density": 30,
+      "layer": 9,
+      "pattern": "2",
+      "color": "#e77f67",
+      "pic": "http://www.the-splash.co.uk/wp-content/uploads/2020/04/Music-Festival-768x510.jpg",
+      "caption": "That might be your view. A lot of phones, a lot of girls on shoulders (and you don't get to see the boobs !)",
+      "right": 300,
+      "data": {
+        "Room to dance": {
+          "value": 1,
+          "caption": "Nope, no room to dance here. Even vertical jumping will be hard, if you don't want to step on strangers toes."
+        },
+        "How late can you come": {
+          "value": 2,
+          "caption": "You still have to be here a bit early, if you want a place."
+        },
+        "Blabbers noise cancel": {
+          "value": 10,
+          "caption": "You won't be bothered by these idiots."
+        },
+        "Scene view": {
+          "value": 8,
+          "caption": "Yeah, nice view, but as it's also the most dense place here, any idiot with a smartphone will ruin it. So only 8/10."
+        },
+        "Proximity to the bar": {
+          "value": 1,
+          "caption": "Oh you can go back to the bar, after spending 3 songs ninja-walking outside the crowd. Spend 3 other songs ordering the drinks, 3 other songs ninja-walking BACK at your spot, never find your friends, spill all your drinks in strangers hoods, cry, wait for the end of the concert back at the bar."
+        },
+        "Security": {
+          "value": 1,
+          "caption": "No safety here. If something bad happens, that's gonna be here. And if nothing happens, you still might get your feet stumbled upon, beer spilled on you (or thrown from behind) or some crowd surfer falling onto you."
+        }
+      }
+    },
+    {
+      "name": "Hell (pit) Hole",
+      "path": "M 425, 170 a 25,25 0 1,1 150,0 a 25,25 0 1,1 -150,0",
+      "density": 30,
+      "layer": 11,
+      "pattern": "2",
+      "color": "black",
+      "pic": "https://www.checkcheckcheck.be/wp-content/uploads/2018/02/article_pogo-1.jpg",
+      "caption": "Where problems happen",
+      "right": 0,
+      "data": {
+        "Room to dance": {
+          "value": 0,
+          "caption": "Shoulders. Omg shoulders everywhere."
+        },
+        "How late can you come": {
+          "value": 2,
+          "caption": "Be there early."
+        },
+        "Blabbers noise cancel": {
+          "value": 10,
+          "caption": "You're here for the audience more than for the band ? Well here you are."
+        },
+        "Scene view": {
+          "value": 5,
+          "caption": "Don't have a tall guy in front of you or you're screwed. Oh you're gonna be screwed anyway. You chose it !"
+        },
+        "Proximity to the bar": {
+          "value": 0,
+          "caption": "Try to drink the beer when it rains on you, that's your only chance. Even your own drink has been spilled by shoulders."
+        },
+        "Security": {
+          "value": 0,
+          "caption": "Danger ? <b>You're</b> the danger.<br/>No seriously, if you're shorter than 1m80, you won't enjoy the concert, AND you'll take risks in case anything happens."
+        }
+      }
+    },
+    {
+      "name": "I don't mind seeing things from the side... Maybe I'm from ancient Egypt",
+      "path": "M 100 0 L 200 300 L 200 0 M 800 0 L 800 300 L 900 0",
+      "density": 6,
+      "layer": 2,
+      "pattern": "3",
+      "color": "#778beb",
+      "pic": "https://res.cloudinary.com/dragonspell/image/upload/w_1600,h_640,c_fill,dpr_auto,fl_progressive:steep,f_auto/v1571420593/www.travelportland.com/EVT_Music_ZooConcert_72012-179_courtesy_OregonZoo1.jpg",
+      "caption": "Forget about the drummer. You'll never see him or her.",
+      "right": 350,
+      "data": {
+        "Room to dance": {
+          "value": 10,
+          "caption": "Better be ZZ Top on stage. Got it ?"
+        },
+        "How late can you come": {
+          "value": 9,
+          "caption": "Yeah there always will be available spots there. But there are REASONS FOR THAT !!"
+        },
+        "Blabbers noise cancel": {
+          "value": 8,
+          "caption": "You'll be as close as can be to the scene-side speakers. So you might lose a few hearing points there, but you won't hear people talking. Forever."
+        },
+        "Scene view": {
+          "value": 2,
+          "caption": "Well the side band member (bass or keyboard) gotta be a nice profile. Or maybe even good looking from the back, if they're placed roundly. And forget about the back - oh there was a light show ?"
+        },
+        "Proximity to the bar": {
+          "value": 8,
+          "caption": "Yup, good spot for that. You can move freely and there's a chance you have a bar very close."
+        },
+        "Security": {
+          "value": 9,
+          "caption": "You might have security crew standing around, and in case of crowd movement you can go to the side barriers. Good spot."
+        }
+      }
+    },
+    {
+      "name": "Ahhh... Perfect",
+      "path": "M 200 200 C 200 300 400 300 400 300 L 600 300 C 800 300 800 200 800 200 L 800 300 C 800 400 600 400 600 400 L 400 400 C 200 400 200 300 200 300",
+      "density": 18,
+      "layer": 8,
+      "pattern": "4",
+      "color": "#686de0",
+      "pic": "https://media.vanityfair.com/photos/5e6921443b2c6a0008bf5b20/master/w_2560%2Cc_limit/FestivalCancellations-2020-GettyImages-174725380.jpg",
+      "caption": "That's where you'll find me !",
+      "right": 300,
+      "data": {
+        "Room to dance": {
+          "value": 10,
+          "caption": "Yeah, best spot to feel the music through the body ; enough room to move your arms and jump around freely, enough people around to NOT feel ashamed."
+        },
+        "How late can you come": {
+          "value": 7,
+          "caption": "On time is fine. And if you don't bother pushing a few eastpak backpacks or ninja-walking in the crowd, you can even be late and still get a nice spot around there."
+        },
+        "Blabbers noise cancel": {
+          "value": 8,
+          "caption": "Not the best isolation but still good. Any group of drinkers thinking they're in a night club, or couples on a date, or teenager whose parents paid for their ticket, will ruin your day. But you'll enough \"in the zone\" to politely ask them to shut the f**k up."
+        },
+        "Scene view": {
+          "value": 9,
+          "caption": "You're far enough to see above the smartphones, close enough to grasp the show. Good spot."
+        },
+        "Proximity to the bar": {
+          "value": 5,
+          "caption": "Density is not at its maximum, so you might find your spot back when you leave for a refill."
+        },
+        "Security": {
+          "value": 7,
+          "caption": "Good spot. All the crowd movement will be in front of you, and density behind you is low enough for you to run."
+        }
+      }
+    },
+    {
+      "name": "My girlfriend doesn't want to get into the crowd",
+      "path": "M 200 300 C 200 400 400 400 400 400 L 600 400 C 800 400 800 300 800 300 L 800 400 C 800 500 600 500 600 500 L 400 500 C 200 500 200 400 200 400",
+      "density": 10,
+      "layer": 7,
+      "pattern": "5",
+      "color": "#786fa6",
+      "pic": "https://thumbs.dreamstime.com/z/couple-swinging-rainbow-flags-sitting-grass-helsinki-pride-festival-helsinki-finland-june-couple-swinging-rainbow-153126913.jpg",
+      "caption": "Well at least you can leave fast, maybe sit on the grass sometimes. But people will pass by you ALL THE F**KING TIME",
+      "right": 300,
+      "data": {
+        "Room to dance": {
+          "value": 8,
+          "caption": "Oh you'll have room to dance. But if you're weird as I am, oh, well, you'll be on YouTube."
+        },
+        "How late can you come": {
+          "value": 10,
+          "caption": "Come any time, leave any time. Have no organisation. No rules. Be anarchist. Live the life."
+        },
+        "Blabbers noise cancel": {
+          "value": 0,
+          "caption": "You'll hear this parent beside you yelling at little Kevin for spilling his orange juice on the picnic napkin. And WHO forgot the sausages ? Concert ? What concert ?"
+        },
+        "Scene view": {
+          "value": 4,
+          "caption": "Well you're very far, so you'll see it all. Just very tiny..."
+        },
+        "Proximity to the bar": {
+          "value": 10,
+          "caption": "Actually you might be <i>behind</i> a bar."
+        },
+        "Security": {
+          "value": 8,
+          "caption": "You will be sitting. Or lying. So be prepared to get fast on your feet if the crowd moves. But you have all that picnic to put back in your Decathlon cooler, so sad !"
+        }
+      }
+    },
+    {
+      "name": "I will talk very loudly with my friends.",
+      "path": "M 0 0 L 100 0 L 200 300 L 200 400 C 200 500 400 500 400 500 L 600 500 C 800 500 800 400 800 400 L 800 300 L 900 0 L 1000 0 L 1000 600 L 0 600",
+      "density": 2,
+      "layer": 0,
+      "pattern": "6",
+      "color": "silver",
+      "pic": "https://www.frtyfve.com/uploads/images/_articleFull/festivalqueue.jpg",
+      "caption": "Seriously guys, go to a night club. Or a regular bar. You don't care about live music.",
+      "right": 500,
+      "data": {
+        "Room to dance": {
+          "value": 10,
+          "caption": "Oh you will dance. But to which music ? You're between two scenes, idiot !"
+        },
+        "How late can you come": {
+          "value": 10,
+          "caption": "Actually there's no spot there. Because you're not even considered by the festival map as AROUND a scene."
+        },
+        "Blabbers noise cancel": {
+          "value": 0,
+          "caption": "You'll hear the cooks at the back of the food-truck yelling at each other. The music ? Not so much."
+        },
+        "Scene view": {
+          "value": 0,
+          "caption": "You might see some lights sometimes."
+        },
+        "Proximity to the bar": {
+          "value": 10,
+          "caption": "Come on."
+        },
+        "Security": {
+          "value": 10,
+          "caption": "Well you might as well be outside the festival, as far as I'm concerned."
+        }
       }
     }
-  },
-  {
-    "name": "Concert 101",
-    "path": "M 200 50 L 800 50 L 800 200 C 800 300 600 300 600 300 L 400 300 C 200 300 200 200 200 200",
-    "density": 30,
-    "layer": 9,
-    "pattern": "2",
-    "color": "#e77f67",
-    "pic": "http://www.the-splash.co.uk/wp-content/uploads/2020/04/Music-Festival-768x510.jpg",
-    "caption": "That might be your view. A lot of phones, a lot of girls on shoulders (and you don't get to see the boobs !)",
-    "right": 300,
-    "data": {
-      "Room to dance": {
-        "value": 1,
-        "caption": "Nope, no room to dance here. Even vertical jumping will be hard, if you don't want to step on strangers toes."
-      },
-      "How late can you come": {
-        "value": 2,
-        "caption": "You still have to be here a bit early, if you want a place."
-      },
-      "Blabbers noise cancel": {
-        "value": 10,
-        "caption": "You won't be bothered by these idiots."
-      },
-      "Scene view": {
-        "value": 8,
-        "caption": "Yeah, nice view, but as it's also the most dense place here, any idiot with a smartphone will ruin it. So only 8/10."
-      },
-      "Proximity to the bar": {
-        "value": 1,
-        "caption": "Oh you can go back to the bar, after spending 3 songs ninja-walking outside the crowd. Spend 3 other songs ordering the drinks, 3 other songs ninja-walking BACK at your spot, never find your friends, spill all your drinks in strangers hoods, cry, wait for the end of the concert back at the bar."
-      },
-      "Security": {
-        "value": 1,
-        "caption": "No safety here. If something bad happens, that's gonna be here. And if nothing happens, you still might get your feet stumbled upon, beer spilled on you (or thrown from behind) or some crowd surfer falling onto you."
+  ],
+  "fr": [
+    {
+      "name": "Le premier de la classe (je participe aux \"Diners en blanc\")",
+      "path": "M 200 0 L 200 0 L 800 0 L 800 50 L 200 50",
+      "density": 40,
+      "layer": 10,
+      "pattern": "1",
+      "color": "#c44569",
+      "pic": "https://c8.alamy.com/comp/B7BDPW/young-crowd-at-an-enter-shikari-gig-going-crazy-cheering-as-they-come-B7BDPW.jpg",
+      "caption": "Je suis arrivé 45 minutes avant pour être sur les photos.",
+      "right": 300,
+      "data": {
+        "Place pour danser": {
+          "value": 0.5,
+          "caption": "Youpi je peux bouger mes bras par-dessus la barrière ? Le reste de mon corps ? Je le sens plus..."
+        },
+        "Investissement en temps": {
+          "value": 0,
+          "caption": "Au moins 30 minutes avant. Donc oubliez si vous voulez enchaîner les concerts."
+        },
+        "Ne pas entendre les cons": {
+          "value": 8,
+          "caption": "J'ai déjà vu un chanteur demander à quelqu'un ici de se taire. <i>True story</i>."
+        },
+        "Vue de la scène": {
+          "value": 5,
+          "caption": "Tu aimes voir sous les jupes des filles ? T'es au bon endroit. Gros dégueu va."
+        },
+        "Proximité d'un bar": {
+          "value": 0,
+          "caption": "Oublie. T'auras pas d'autre bière que celle avec laquelle t'es venu, et que t'as de toute manière terminé en attendant le début."
+        },
+        "Sécurité": {
+          "value": 6,
+          "caption": "C'est en fait un endroit assez sécurisé. La sécu vous donnera de l'eau s'il fait chaud, et vous sortira par le couloir en cas de malaise. En cas de mouvement de foule, vous avez juste à vous accrocher à la barrière."
+        }
+      }
+    },
+    {
+      "name": "La base",
+      "path": "M 200 50 L 800 50 L 800 200 C 800 300 600 300 600 300 L 400 300 C 200 300 200 200 200 200",
+      "density": 30,
+      "layer": 9,
+      "pattern": "2",
+      "color": "#e77f67",
+      "pic": "http://www.the-splash.co.uk/wp-content/uploads/2020/04/Music-Festival-768x510.jpg",
+      "caption": "Ce sera ta vue. Beaucoup de smartphones, beaucoup de filles sur des épaules (et tu verras même pas les boobs)",
+      "right": 300,
+      "data": {
+        "Place pour danser": {
+          "value": 1,
+          "caption": "Non, ici on danse pas. On bouge avec la foule, on sautille éventuellement quand les autres sautillent."
+        },
+        "Investissement en temps": {
+          "value": 2,
+          "caption": "Yep faudra être ici un peu tôt."
+        },
+        "Ne pas entendre les cons": {
+          "value": 10,
+          "caption": "On n'entend pas les idiots ici."
+        },
+        "Vue de la scène": {
+          "value": 8,
+          "caption": "Bonne vue, mais c'est aussi l'endroit le plus dense, donc le smartphone tenu par le connard devant vous vous cachera toute la scène."
+        },
+        "Proximité d'un bar": {
+          "value": 1,
+          "caption": "Oh tu peux aller au bar... Passer 3 chansons à frayer la foule à contre-courant. 3 chansons à commander la bière. 3 chansons à essayer de revenir en frayant la foule à travers des sacs Eastpak. Renverser toutes les bières. Pleurer. Remettre ses choix en question."
+        },
+        "Sécurité": {
+          "value": 1,
+          "caption": "Zéro sécurité ici. Si quelque chose se passe, ce sera là. J'ai déjà été soulevé par un mouvement de foule et reposé 4 mètres plus loin. Et c'est ici que les crowd surfers te tomberont sur la tronche."
+        }
+      }
+    },
+    {
+      "name": "Le chaudron",
+      "path": "M 425, 170 a 25,25 0 1,1 150,0 a 25,25 0 1,1 -150,0",
+      "density": 30,
+      "layer": 11,
+      "pattern": "2",
+      "color": "black",
+      "pic": "https://www.checkcheckcheck.be/wp-content/uploads/2018/02/article_pogo-1.jpg",
+      "caption": "Distanciation sociale : moins mille.",
+      "right": 0,
+      "data": {
+        "Place pour danser": {
+          "value": 0,
+          "caption": "Une épaule. Une épaule. Une épaule. Oh pu*** des épaules partout."
+        },
+        "Investissement en temps": {
+          "value": 2,
+          "caption": "Faut être là tôt."
+        },
+        "Ne pas entendre les cons": {
+          "value": 10,
+          "caption": "T'es ici plus pour le public que pour la musique ? T'es au bon endroit."
+        },
+        "Vue de la scène": {
+          "value": 5,
+          "caption": "Si t'as un grand devant toi, t'es mort. De toute manière si tu fais moins d'1m80 fallait pas venir ici."
+        },
+        "Proximité d'un bar": {
+          "value": 0,
+          "caption": "Essaie de boire de la bière quand elle pleut sur toi. Parce que la tienne tu l'as renversée tellement tu es bousculé et compressé."
+        },
+        "Sécurité": {
+          "value": 0,
+          "caption": "Danger ? <b>Tu es</b> le danger.<br/>Non sérieusement, les mouvements de foule ici peuvent être vraiment dangereux, sans compter les pogos (mais ça au moins c'est volontaire)."
+        }
+      }
+    },
+    {
+      "name": "J'adore voir les choses de profil. Si ça se trouve je viens d'Egypte antique.",
+      "path": "M 100 0 L 200 300 L 200 0 M 800 0 L 800 300 L 900 0",
+      "density": 6,
+      "layer": 2,
+      "pattern": "3",
+      "color": "#778beb",
+      "pic": "https://res.cloudinary.com/dragonspell/image/upload/w_1600,h_640,c_fill,dpr_auto,fl_progressive:steep,f_auto/v1571420593/www.travelportland.com/EVT_Music_ZooConcert_72012-179_courtesy_OregonZoo1.jpg",
+      "caption": "Oublie le batteur. Tu le ou la verras jamais.",
+      "right": 350,
+      "data": {
+        "Place pour danser": {
+          "value": 10,
+          "caption": "J'espère que c'est ZZ Top qui passe. Tu l'as ? Ha ha."
+        },
+        "Investissement en temps": {
+          "value": 9,
+          "caption": "Yep y aura toujours de la place ici. MAIS POUR UNE RAISON !!"
+        },
+        "Ne pas entendre les cons": {
+          "value": 8,
+          "caption": "Les enceintes latérales sont là, juste devant. Donc t'entendras pas les cons. Pour toujours."
+        },
+        "Vue de la scène": {
+          "value": 2,
+          "caption": "Le bassiste ou la claviériste a intérêt à avoir un joli profil. Ou même un joli dos s'ils se sont placés en demi-cercle. Un light show ? Y avait un light show ?"
+        },
+        "Proximité d'un bar": {
+          "value": 8,
+          "caption": "Yep, les bars seront pas loin."
+        },
+        "Sécurité": {
+          "value": 9,
+          "caption": "Il y a souvent ici des agents de sécu, et en cas de mouvement de foule, des barrières à proximité."
+        }
+      }
+    },
+    {
+      "name": "Ahhh... Perfect",
+      "path": "M 200 200 C 200 300 400 300 400 300 L 600 300 C 800 300 800 200 800 200 L 800 300 C 800 400 600 400 600 400 L 400 400 C 200 400 200 300 200 300",
+      "density": 18,
+      "layer": 8,
+      "pattern": "4",
+      "color": "#686de0",
+      "pic": "https://media.vanityfair.com/photos/5e6921443b2c6a0008bf5b20/master/w_2560%2Cc_limit/FestivalCancellations-2020-GettyImages-174725380.jpg",
+      "caption": "C'est ici que vous me trouverez !",
+      "right": 300,
+      "data": {
+        "Place pour danser": {
+          "value": 10,
+          "caption": "Yep, meilleur endroit pour se laisser aller. Assez de place pour vraiment bouger, ET assez de gens qui te cachent pour ne pas sentir ta honte."
+        },
+        "Investissement en temps": {
+          "value": 7,
+          "caption": "A l'heure suffira. Et si tu sais frayer la foule en mode ninja, tu peux même finir le concert précédent et arriver après le premier morceau."
+        },
+        "Ne pas entendre les cons": {
+          "value": 8,
+          "caption": "Pas la meilleure isolation mais quand même pas mal. Le moindre groupe de connards qui se croient en boite, ou un couple en date Tinder, ou une ado au téléphone parce que ses parents ont payé son entrée à 200 balles te gâcheront le doux solo de piano. Mais c'est assez dense pour leur faire poliment comprendre de FERMER LEUR GUEULE ou d'aller dans une autre zone."
+        },
+        "Vue de la scène": {
+          "value": 9,
+          "caption": "On est assez loin pour voir par dessus les smartphones, et on a assez de place pour se décaler sur le côté si Nancy monte sur les épaules de Kevin parce qu'ils veulent se choper. Good spot."
+        },
+        "Proximité d'un bar": {
+          "value": 5,
+          "caption": "La densité est pas à son maximum donc la liberté de navigation est suffisante pour aller au bar, revenir, retrouver ses potes."
+        },
+        "Sécurité": {
+          "value": 7,
+          "caption": "Bien. Les mouvements de foule seront dans les zones de devant, et derrière est assez peu dense pour pouvoir courir."
+        }
+      }
+    },
+    {
+      "name": "Ma copine ne veut pas aller dans la foule",
+      "path": "M 200 300 C 200 400 400 400 400 400 L 600 400 C 800 400 800 300 800 300 L 800 400 C 800 500 600 500 600 500 L 400 500 C 200 500 200 400 200 400",
+      "density": 10,
+      "layer": 7,
+      "pattern": "5",
+      "color": "#786fa6",
+      "pic": "https://thumbs.dreamstime.com/z/couple-swinging-rainbow-flags-sitting-grass-helsinki-pride-festival-helsinki-finland-june-couple-swinging-rainbow-153126913.jpg",
+      "caption": "Bon au moins tu peux t'asseoir. Mais les gens en transition te passeront devant et t'enjamberont pendant TOUT LE PU*** DE CONCERT",
+      "right": 300,
+      "data": {
+        "Place pour danser": {
+          "value": 8,
+          "caption": "Oh tu peux danser tout ton saoul. Mais si t'es aussi bizarre que moi, eh bien... dis bonjour à YouTube."
+        },
+        "Investissement en temps": {
+          "value": 10,
+          "caption": "Viens quand tu veux, pars quand tu veux. Ne t'organise pas. Ne réfléchis pas. Sois libre Max."
+        },
+        "Ne pas entendre les cons": {
+          "value": 0,
+          "caption": "T'entendras ce parent à côté de toi engueuler le petit Augustin parce qu'il a renversé sa Pom'Pot sur la nappe à pic-nic. Un concert ? Où ça un concert ?"
+        },
+        "Vue de la scène": {
+          "value": 4,
+          "caption": "Bon t'es loin, tu vois bien... juste tout <span style=\"font-size: 80%\">petit</span> <span style=\"font-size: 60%\">petit</span> <span style=\"font-size: 40%\">petit</span> !"
+        },
+        "Proximité d'un bar": {
+          "value": 10,
+          "caption": "Ca se trouve tu seras même <i>derrière</i> un bar."
+        },
+        "Sécurité": {
+          "value": 8,
+          "caption": "Tu seras assis. P'tetre même allongé. Alors prépare toi à te lever vite s'il y a un mouvement de foule. Mais faut ranger tout le pic-nic dans la glacière, raaah ! Abandonne Jack, laisse la confiture de myrtille ici !"
+        }
+      }
+    },
+    {
+      "name": "Je parle très fort avec mes amis",
+      "path": "M 0 0 L 100 0 L 200 300 L 200 400 C 200 500 400 500 400 500 L 600 500 C 800 500 800 400 800 400 L 800 300 L 900 0 L 1000 0 L 1000 600 L 0 600",
+      "density": 2,
+      "layer": 0,
+      "pattern": "6",
+      "color": "silver",
+      "pic": "https://www.frtyfve.com/uploads/images/_articleFull/festivalqueue.jpg",
+      "caption": "Sincèrement, allez en boite.",
+      "right": 500,
+      "data": {
+        "Place pour danser": {
+          "value": 10,
+          "caption": "Oh tu vas danser. Mais sur quelle musique ? T'es entre deux scènes, blaireau !"
+        },
+        "Investissement en temps": {
+          "value": 10,
+          "caption": "Bah y a pas d'emplacements ici. En fait pour l'orga du festival t'es même pas considéré près d'une scène. File."
+        },
+        "Ne pas entendre les cons": {
+          "value": 0,
+          "caption": "T'entendras le staff du food truck <i>bio-hot-dog-vegan-ta-mère</i> s'engueuler en cuisine. La musique ? Non."
+        },
+        "Vue de la scène": {
+          "value": 0,
+          "caption": "Tu verras peut-être un peu de lumière parfois, si un spot est mal réglé."
+        },
+        "Proximité d'un bar": {
+          "value": 10,
+          "caption": "Bah oui."
+        },
+        "Sécurité": {
+          "value": 10,
+          "caption": "Très dense entre deux gros concerts (voire l'artère principale des Solidays vers 20h). Sinon, désert."
+        }
       }
     }
-  },
-  {
-    "name": "Hell (pit) Hole",
-    "path": "M 425, 170 a 25,25 0 1,1 150,0 a 25,25 0 1,1 -150,0",
-    "density": 30,
-    "layer": 11,
-    "pattern": "2",
-    "color": "black",
-    "pic": "https://www.checkcheckcheck.be/wp-content/uploads/2018/02/article_pogo-1.jpg",
-    "caption": "Where problems happen",
-    "right": 0,
-    "data": {
-      "Room to dance": {
-        "value": 0,
-        "caption": "Shoulders. Omg shoulders everywhere."
-      },
-      "How late can you come": {
-        "value": 2,
-        "caption": "Be there early."
-      },
-      "Blabbers noise cancel": {
-        "value": 10,
-        "caption": "You're here for the audience more than for the band ? Well here you are."
-      },
-      "Scene view": {
-        "value": 5,
-        "caption": "Don't have a tall guy in front of you or you're screwed. Oh you're gonna be screwed anyway. You chose it !"
-      },
-      "Proximity to the bar": {
-        "value": 0,
-        "caption": "Try to drink the beer when it rains on you, that's your only chance. Even your own drink has been spilled by shoulders."
-      },
-      "Security": {
-        "value": 0,
-        "caption": "Danger ? <b>You're</b> the danger.<br/>No seriously, if you're shorter than 1m80, you won't enjoy the concert, AND you'll take risks in case anything happens."
-      }
-    }
-  },
-  {
-    "name": "I don't mind seeing things from the side... Maybe I'm from ancient Egypt",
-    "path": "M 100 0 L 200 300 L 200 0 M 800 0 L 800 300 L 900 0",
-    "density": 6,
-    "layer": 2,
-    "pattern": "3",
-    "color": "#778beb",
-    "pic": "https://res.cloudinary.com/dragonspell/image/upload/w_1600,h_640,c_fill,dpr_auto,fl_progressive:steep,f_auto/v1571420593/www.travelportland.com/EVT_Music_ZooConcert_72012-179_courtesy_OregonZoo1.jpg",
-    "caption": "Forget about the drummer. You'll never see him or her.",
-    "right": 350,
-    "data": {
-      "Room to dance": {
-        "value": 10,
-        "caption": "Better be ZZ Top on stage. Got it ?"
-      },
-      "How late can you come": {
-        "value": 9,
-        "caption": "Yeah there always will be available spots there. But there are REASONS FOR THAT !!"
-      },
-      "Blabbers noise cancel": {
-        "value": 8,
-        "caption": "You'll be as close as can be to the scene-side speakers. So you might lose a few hearing points there, but you won't hear people talking. Forever."
-      },
-      "Scene view": {
-        "value": 2,
-        "caption": "Well the side band member (bass or keyboard) gotta be a nice profile. Or maybe even good looking from the back, if they're placed roundly. And forget about the back - oh there was a light show ?"
-      },
-      "Proximity to the bar": {
-        "value": 8,
-        "caption": "Yup, good spot for that. You can move freely and there's a chance you have a bar very close."
-      },
-      "Security": {
-        "value": 9,
-        "caption": "You might have security crew standing around, and in case of crowd movement you can go to the side barriers. Good spot."
-      }
-    }
-  },
-  {
-    "name": "Ahhh... Perfect",
-    "path": "M 200 200 C 200 300 400 300 400 300 L 600 300 C 800 300 800 200 800 200 L 800 300 C 800 400 600 400 600 400 L 400 400 C 200 400 200 300 200 300",
-    "density": 18,
-    "layer": 8,
-    "pattern": "4",
-    "color": "#686de0",
-    "pic": "https://media.vanityfair.com/photos/5e6921443b2c6a0008bf5b20/master/w_2560%2Cc_limit/FestivalCancellations-2020-GettyImages-174725380.jpg",
-    "caption": "That's where you'll find me !",
-    "right": 300,
-    "data": {
-      "Room to dance": {
-        "value": 10,
-        "caption": "Yeah, best spot to feel the music through the body ; enough room to move your arms and jump around freely, enough people around to NOT feel ashamed."
-      },
-      "How late can you come": {
-        "value": 7,
-        "caption": "On time is fine. And if you don't bother pushing a few eastpak backpacks or ninja-walking in the crowd, you can even be late and still get a nice spot around there."
-      },
-      "Blabbers noise cancel": {
-        "value": 8,
-        "caption": "Not the best isolation but still good. Any group of drinkers thinking they're in a night club, or couples on a date, or teenager whose parents paid for their ticket, will ruin your day. But you'll enough \"in the zone\" to politely ask them to shut the f**k up."
-      },
-      "Scene view": {
-        "value": 9,
-        "caption": "You're far enough to see above the smartphones, close enough to grasp the show. Good spot."
-      },
-      "Proximity to the bar": {
-        "value": 5,
-        "caption": "Density is not at its maximum, so you might find your spot back when you leave for a refill."
-      },
-      "Security": {
-        "value": 7,
-        "caption": "Good spot. All the crowd movement will be in front of you, and density behind you is low enough for you to run."
-      }
-    }
-  },
-  {
-    "name": "My girlfriend doesn't want to get into the crowd",
-    "path": "M 200 300 C 200 400 400 400 400 400 L 600 400 C 800 400 800 300 800 300 L 800 400 C 800 500 600 500 600 500 L 400 500 C 200 500 200 400 200 400",
-    "density": 10,
-    "layer": 7,
-    "pattern": "5",
-    "color": "#786fa6",
-    "pic": "https://thumbs.dreamstime.com/z/couple-swinging-rainbow-flags-sitting-grass-helsinki-pride-festival-helsinki-finland-june-couple-swinging-rainbow-153126913.jpg",
-    "caption": "Well at least you can leave fast, maybe sit on the grass sometimes. But people will pass by you ALL THE F**KING TIME",
-    "right": 300,
-    "data": {
-      "Room to dance": {
-        "value": 8,
-        "caption": "Oh you'll have room to dance. But if you're weird as I am, oh, well, you'll be on YouTube."
-      },
-      "How late can you come": {
-        "value": 10,
-        "caption": "Come any time, leave any time. Have no organisation. No rules. Be anarchist. Live the life."
-      },
-      "Blabbers noise cancel": {
-        "value": 0,
-        "caption": "You'll hear this parent beside you yelling at little Kevin for spilling his orange juice on the picnic napkin. And WHO forgot the sausages ? Concert ? What concert ?"
-      },
-      "Scene view": {
-        "value": 4,
-        "caption": "Well you're very far, so you'll see it all. Just very tiny..."
-      },
-      "Proximity to the bar": {
-        "value": 10,
-        "caption": "Actually you might be <i>behind</i> a bar."
-      },
-      "Security": {
-        "value": 8,
-        "caption": "You will be sitting. Or lying. So be prepared to get fast on your feet if the crowd moves. But you have all that picnic to put back in your Decathlon cooler, so sad !"
-      }
-    }
-  },
-  {
-    "name": "I will talk very loudly with my friends.",
-    "path": "M 0 0 L 100 0 L 200 300 L 200 400 C 200 500 400 500 400 500 L 600 500 C 800 500 800 400 800 400 L 800 300 L 900 0 L 1000 0 L 1000 600 L 0 600",
-    "density": 2,
-    "layer": 0,
-    "pattern": "6",
-    "color": "silver",
-    "pic": "https://www.frtyfve.com/uploads/images/_articleFull/festivalqueue.jpg",
-    "caption": "Seriously guys, go to a night club. Or a regular bar. You don't care about live music.",
-    "right": 500,
-    "data": {
-      "Room to dance": {
-        "value": 10,
-        "caption": "Oh you will dance. But to which music ? You're between two scenes, idiot !"
-      },
-      "How late can you come": {
-        "value": 10,
-        "caption": "Actually there's no spot there. Because you're not even considered by the festival map as AROUND a scene."
-      },
-      "Blabbers noise cancel": {
-        "value": 0,
-        "caption": "You'll hear the cooks at the back of the food-truck yelling at each other. The music ? Not so much."
-      },
-      "Scene view": {
-        "value": 0,
-        "caption": "You might see some lights sometimes."
-      },
-      "Proximity to the bar": {
-        "value": 10,
-        "caption": "Come on."
-      },
-      "Security": {
-        "value": 10,
-        "caption": "Well you might as well be outside the festival, as far as I'm concerned."
-      }
-    }
-  }
-]
+  ]
+}
