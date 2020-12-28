@@ -34,6 +34,19 @@
       "content": [
         "<img class=\"img\" src=\"https://f.hellowork.com/blogdumoderateur/2014/08/linkedin-logo-240x212.png\" /> <a href=\"https://www.linkedin.com/in/gkapustin\" target=\"_blank\">LinkedIn</a> <img class=\"img\" src=\"https://help.twitter.com/content/dam/help-twitter/brand/logo.png\" /> <a href=\"https://twitter.com/ouaibagency\" target=\"_blank\">Twitter</a> <img class=\"img\" src=\"https://github.githubassets.com/images/modules/open_graph/github-mark.png\" /> <a href=\"https://github.com/GregKapustin\" target=\"_blank\">GitHub</a>"
       ]
+    },
+    "why": {
+      "title": "Why",
+      "content": [
+        "<b>Enjoying a concert can be hard</b> - that's why I made this interface.",
+        "&nbsp;",
+        "<li><u>It might be annoying</u> - if you're short, choose wisely, or you won't see anything.</li>",
+        "<li><u>It might be a waste</u> - if you're at the front, don't go grab a beer mid-concert - you'll miss everything.</li>",
+        "<li><u>It might be dangerous</u> - when the crowd is moving, tens of thousands of people in a small space can hurt you bad.</li>",
+        "<li><u>It might be frightening</u> - I had to get someone out of a too dense zone many times (you know who you are)</li>",
+        "&nbsp;",
+        "So choose wisely, read the guidelines and the advices if you have the time, and enjoy !"
+      ]
     }
   },
   "fr": {
@@ -70,6 +83,19 @@
       "title": "Contact",
       "content": [
         "<a href=\"https://www.linkedin.com/in/gkapustin\" target=\"_blank\"><img class=\"img\" src=\"https://f.hellowork.com/blogdumoderateur/2014/08/linkedin-logo-240x212.png\" /></a> <a href=\"https://github.com/GregKapustin\" target=\"_blank\"><img class=\"img\" src=\"https://github.githubassets.com/images/modules/open_graph/github-mark.png\" /></a> <a href=\"https://twitter.com/ouaibagency\" target=\"_blank\"><img class=\"img\" src=\"https://help.twitter.com/content/dam/help-twitter/brand/logo.png\" /></a>"
+      ]
+    },
+    "why": {
+      "title": "Mais pourquoi ?!",
+      "content": [
+        "<b>Profiter d'un concert peut être compliqué</b> - c'est pourquoi je vous propose cette interface.",
+        "&nbsp;",
+        "<li><u>Ca peut être relou</u> - si vous êtes petit(e), choisissez bien votre spot, ou vous ne verrez que des nuques.</li>",
+        "<li><u>Ca peut être gâché</u> - si vous êtes devant, n'allez pas chercher une bière après le début du concert : vous raterez tout.</li>",
+        "<li><u>Ca peut être dangereux</u> - le mouvement de foule de plusieurs dizaines de milliers de personnes dans un espace restreint peut vous blesser - gravement même.</li>",
+        "<li><u>Ca peut être angoissant</u> - j'ai eu plusieurs fois à accompagner des gens en dehors d'une zone trop dense à cause de crises d'angoisse.</li>",
+        "&nbsp;",
+        "Alors choisissez sereinement, comportez-vous bien, lisez les guidelines et conseils, et profitez !"
       ]
     }
   }

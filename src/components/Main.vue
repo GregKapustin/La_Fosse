@@ -131,7 +131,7 @@ export default {
   background: white;
   padding: 10px 50px 10px 5px;
   border-bottom-right-radius: 10px;
-  font-family: 'Carter One';
+  font-family: 'Ropa Sans';
   color: #34495e;
   font-size: 40px;
   line-height: 40px;

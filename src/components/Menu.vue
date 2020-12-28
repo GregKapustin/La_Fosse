@@ -86,6 +86,15 @@
         <div class="menu_stuff_content" v-for="(content, i) in texts[lang].contact.content" v-html="content" :key="'contact_' + i" />
       </div>
     </div>
+    <div class="item">
+      <div class="menu_icon">
+        <font-awesome-icon icon="info-circle" />
+      </div>
+      <div class="menu_stuff align-left" id="why">
+        <h1>{{ texts[lang].why.title }}</h1>
+        <div class="menu_stuff_content" v-for="(content, i) in texts[lang].why.content" v-html="content" :key="'why_' + i" />
+      </div>
+    </div>
   </div>
 </template>
 
