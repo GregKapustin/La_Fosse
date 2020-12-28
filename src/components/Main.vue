@@ -1,5 +1,24 @@
 <template>
   <div class="hello" @mouseenter="zoneOut()">
+    <vue-headful
+      title="La Fosse"
+      description="Géographie d'une fosse de concert"
+      keywords="concerts, musique, festival, fosse"
+      image="https://media.vanityfair.com/photos/5e6921443b2c6a0008bf5b20/master/w_2560%2Cc_limit/FestivalCancellations-2020-GettyImages-174725380.jpg"
+      ogLocale="fr_FR"
+      url="http://lafosse.cre8ive.fr"
+    />
+    <vue-headful
+      title="A concert's geography"
+      description="Géographie d'une fosse de concert"
+      keywords="concerts, music, festival, mosh pit, hall"
+      image="https://media.vanityfair.com/photos/5e6921443b2c6a0008bf5b20/master/w_2560%2Cc_limit/FestivalCancellations-2020-GettyImages-174725380.jpg"
+      ogLocale="en_US"
+      url="http://lafosse.cre8ive.fr"
+    />
+    <vue-headful
+      :title="lang === 'en' ? 'A concert\'s geography' : 'La fosse'"
+    />
     <Menu
       :graphChange="paramGraph" :graphType="graphType"
       :langChange="paramLang" :lang="lang"

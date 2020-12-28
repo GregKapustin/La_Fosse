@@ -16,6 +16,9 @@ Vue.use(VueGtag, {
   config: { id: "G-XRK6XT4LQ3" }
 });
 
+import vueHeadful from 'vue-headful';
+Vue.component('vue-headful', vueHeadful);
+
 import VueApexCharts from 'vue-apexcharts'
 Vue.use(VueApexCharts)
 Vue.component('apexchart', VueApexCharts)
