@@ -151,6 +151,7 @@ export default {
   background-size: cover;
 }
 #svg_main {
+  opacity: 0.9;
   border: solid 1px silver;
   position: absolute;
   top: 50%;
@@ -192,6 +193,7 @@ export default {
   left: 2%;
   padding-top: 30px;
   overflow: hidden;
+  opacity: 0.8;
 }
 #background {
   position: absolute;
