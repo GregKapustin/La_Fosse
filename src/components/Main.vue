@@ -28,8 +28,8 @@
       {{ lang === 'fr' ? 'Géographie de la fosse' : 'Concert geography' }}
     </div>
     <div id="scene" @mouseenter="zoneOut()"></div>
-    <div id="scene_2_0" v-if="articleType === 'interactive'" ></div>
-    <div id="scene_2_1" v-if="articleType === 'interactive'" ></div>
+    <div id="scene_2_0" @mouseenter="zoneOut()" v-if="articleType === 'interactive'" ></div>
+    <div id="scene_2_1" @mouseenter="zoneOut()" v-if="articleType === 'interactive'" ></div>
     <div v-if="articleType === 'interactive'">
       <svg id="svg_main" width="1000" height="600">
         <Zone v-for="(zone, i) in zonesSorted"
