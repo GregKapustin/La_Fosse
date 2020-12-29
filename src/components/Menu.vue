@@ -1,6 +1,6 @@
 <template>
   <div id="menu">
-    <div class="item">
+    <div class="item" :class="{animated: !cogsHovered, bounce: !cogsHovered}" @mouseover="cogsHovered = true">
       <div class="menu_icon">
         <font-awesome-icon icon="cogs" />
       </div>
@@ -114,7 +114,8 @@ export default {
   },
   data: () => {
     return {
-      texts
+      texts,
+      cogsHovered: false
     }
   },
   computed: {
@@ -159,8 +160,8 @@ export default {
   display: block;
   float: left;
   min-width: 50px;
-  min-height: 50px;
-  margin-top: 0px;
+  min-height: 60px;
+  margin-top: -10px;
   background: white;
   margin-right: 30px;
   transition: 0.5s all ease;
@@ -172,7 +173,7 @@ export default {
   margin-top: 0
 }
 #menu .item .menu_icon {
-  margin-top: 7px;
+  margin-top: 17px;
   width: 100%;
   text-align: center;
   font-size: 25px;
@@ -216,6 +217,37 @@ h2 {
 }
 .align-right {
   text-align: right;
+}
+
+.animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
 }
 </style>
 <style>
